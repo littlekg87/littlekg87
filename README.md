@@ -1,3 +1,7 @@
+<p align="right">
+  <strong>English</strong> | <a href="./README.ko.md">한국어</a>
+</p>
+
 # Hi, I’m Kunha Kim 👋
 
 ### Historian of Joseon Korea | Digital History Researcher
