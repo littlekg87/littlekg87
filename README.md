@@ -8,11 +8,16 @@
 
 > Making historical sources searchable, computable, and askable.
 
-I am a historian of premodern Korea and a digital history researcher at Sogang University, South Korea. My research focuses on the military and socio-economic history of the Joseon dynasty, particularly military service, population, regional inequality, and the relationship between state institutions and local society.
+I am a historian of Joseon Korea and a digital history researcher at Sogang University, South Korea. I received my Ph.D. in History from Sogang University, and my primary field is the military and socio-economic history of the Joseon dynasty.
 
-I combine historical criticism with computational methods to analyze large-scale historical records and scholarly metadata. I am also interested in designing digital research environments in which historians can search, analyze, and ask questions of historical sources.
+My doctoral research examined how the military service system of early Joseon changed through *daerip* (代立), the practice of employing substitutes to perform military service. I trace how the spread of substitution and the standardization of military-service costs gradually transformed direct labor obligations into state-managed substitution and military taxation.
 
-## 🔎 Current Research
+Alongside this traditional historical research, I combine historical criticism with computational methods to analyze large-scale historical records and scholarly metadata. I am also interested in designing digital research environments in which historians can search, analyze, and ask questions of historical sources.
+
+## 🔎 Research Areas and Current Projects
+
+- **Military Service and Substitution in Early Joseon Korea**  
+  Examining the transformation of Joseon’s household-based military mobilization system through *daerip* (代立), the practice of employing substitutes to perform military service. This research investigates the hidden costs and unequal distribution of military obligations, the emergence of a market for military labor, and the gradual standardization of substitution fees. It explains how direct mobilization based on personal labor developed into state-managed substitution and military taxation.
 
 - **[Ask Sillok](https://beta.asksillok.com/)**  
   A retrieval-augmented generation system for asking historical questions about the *Annals of the Joseon Dynasty*. The project explores how historical archives can move from being merely searchable to becoming reliable and askable research environments.
@@ -31,7 +36,9 @@ I combine historical criticism with computational methods to analyze large-scale
 
 ## 📚 Research Interests
 
-- Korean History and Joseon History
+- Joseon History and Korean History
+- Early Joseon Military Institutions and Military Service
+- *Daerip* (Military Substitution), Conscription, and Military Taxation
 - Military and Socio-Economic History
 - Sino-Korean and East Asian Relations
 - Digital History and Digital Humanities
@@ -43,6 +50,7 @@ I combine historical criticism with computational methods to analyze large-scale
 
 ## 🛠 Methods and Technologies
 
+`Historical Criticism` · `Archival Research`  
 `Python` · `Pandas` · `GeoPandas` · `QGIS`  
 `RAG` · `Embeddings` · `Fine-tuning` · `Information Retrieval`  
 `XML Processing` · `Web Scraping` · `Text Mining`  
@@ -55,11 +63,13 @@ I welcome collaboration at the intersection of **historical scholarship and digi
 
 I am especially interested in collaborating with historians, digital humanists, data scientists, libraries, archives, museums, and other cultural institutions seeking to develop reliable digital research environments for historical materials.
 
+I also welcome scholarly exchange on Joseon military institutions, military service and substitution, military labor, socio-economic history, and comparative approaches to state mobilization.
+
 ## 📫 Contact
 
 - Email: [littlekg87@gmail.com](mailto:littlekg87@gmail.com)
 - Ask Sillok: [beta.asksillok.com](https://beta.asksillok.com/)
-- Portfolio page(Korea): [kunslab.com](https://kunslab.com/)
+- Portfolio (Korean): [kunslab.com](https://kunslab.com/)
 
 ---
 
