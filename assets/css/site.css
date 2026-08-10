@@ -1,11 +1,12 @@
 :root{
   --deep:#0C2542; --navy:#143963; --mint:#7FCBBE; --mint-dim:#4F9A8E;
-  --ink:#171717; --mid:#5c5c5c; --line:#e4e4e1; --paper:#fdfdfc;
+  --ink:#141414; --mid:#4a4a4a; --line:#e4e4e1; --paper:#fdfdfc;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:'Noto Serif KR',serif;line-height:1.75;
-  -webkit-font-smoothing:antialiased}
+body{background:var(--paper);color:var(--ink);font-family:'Noto Sans KR',sans-serif;
+  font-weight:400;line-height:1.75;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.brand{font-family:'Noto Serif KR',serif}
 img{max-width:100%}
 a{color:inherit}
 .wrap{max-width:1320px;margin:0 auto;padding-left:56px;padding-right:56px}
@@ -34,10 +35,10 @@ a{color:inherit}
 .rule{width:52px;height:2px;background:var(--mint);margin-bottom:28px}
 .eyebrow{font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;
   color:var(--mint);margin-bottom:22px}
-.hin h1{font-size:80px;font-weight:600;line-height:1.06;letter-spacing:-.025em}
+.hin h1{font-size:80px;font-weight:700;line-height:1.06;letter-spacing:-.025em}
 .hin h1 em{font-style:normal;display:block;font-family:'Inter',sans-serif;font-size:21px;
   font-weight:300;letter-spacing:.18em;color:rgba(255,255,255,.55);margin-top:18px}
-.tag{margin-top:34px;font-size:22.5px;line-height:1.95;color:rgba(255,255,255,.92);max-width:28em}
+.tag{margin-top:34px;font-size:22px;line-height:1.95;font-weight:500;color:rgba(255,255,255,.94);max-width:28em}
 .tag b{color:var(--mint);font-weight:600}
 .affil{margin:28px 0 44px;font-size:15.5px;line-height:1.95;color:rgba(255,255,255,.58)}
 .acts{display:flex;gap:11px;flex-wrap:wrap}
@@ -51,7 +52,7 @@ a{color:inherit}
 /* 내부 페이지 머리 */
 .phead{background:linear-gradient(180deg,#0E2A4A 0%,var(--deep) 100%);color:#fff;
   padding:76px 0 84px}
-.phead h1{font-size:48px;font-weight:600;letter-spacing:-.02em}
+.phead h1{font-size:48px;font-weight:700;letter-spacing:-.02em}
 .phead .sub{margin-top:20px;font-size:17px;line-height:1.95;color:rgba(255,255,255,.72);
   max-width:46em}
 
@@ -60,11 +61,11 @@ section{padding-top:140px;padding-bottom:140px}
 section+section{padding-top:0}
 .shead{margin-bottom:60px}
 .headrow{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
-h2{font-size:36px;font-weight:600;letter-spacing:-.01em;position:relative;padding-left:21px}
+h2{font-size:36px;font-weight:700;letter-spacing:-.01em;position:relative;padding-left:21px}
 h2::before{content:'';position:absolute;left:0;top:11px;bottom:11px;width:3px;background:var(--mint-dim)}
 h2 small{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color:var(--mint-dim);
   text-transform:uppercase;display:block;margin-bottom:10px;font-weight:400}
-.lede{margin-top:18px;font-size:18.5px;color:var(--mid);max-width:46em;line-height:1.95}
+.lede{margin-top:18px;font-size:19px;color:var(--mid);max-width:46em;line-height:1.95}
 .more{font-family:'Inter',sans-serif;font-size:14px;color:var(--navy);text-decoration:none;
   border-bottom:1px solid var(--mint-dim);padding-bottom:2px;white-space:nowrap}
 .prose p{font-size:17px;line-height:2.05;color:#2e2e2e;max-width:44em}
@@ -75,7 +76,7 @@ h2 small{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color
 .crow{display:grid;grid-template-columns:210px 1fr;gap:32px;padding:26px 0;
   border-bottom:1px solid var(--line);align-items:baseline}
 .crow .p{font-family:'Inter',sans-serif;font-size:13.5px;color:var(--mint-dim);letter-spacing:.02em}
-.crow h4{font-size:18px;font-weight:600;margin-bottom:5px}
+.crow h4{font-size:18px;font-weight:700;margin-bottom:5px}
 .crow p{font-size:14.5px;color:var(--mid);line-height:1.75}
 .ckind{display:inline-block;font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:.14em;
   color:var(--navy);border:1px solid #d5dee3;padding:2px 8px;border-radius:2px;margin-left:9px;
@@ -92,8 +93,8 @@ h2 small{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color
 .axis .fig img,.axis .fig svg{max-height:100%;max-width:100%;object-fit:contain}
 .axis .bd{padding:34px 38px 40px;display:flex;flex-direction:column;flex:1}
 .axis .no{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.2em;color:var(--mint-dim)}
-.axis h3{font-size:25px;font-weight:600;margin:11px 0 16px;letter-spacing:-.01em}
-.axis p{font-size:17px;line-height:1.95;color:#3a3a3a}
+.axis h3{font-size:25px;font-weight:700;margin:11px 0 16px;letter-spacing:-.01em}
+.axis p{font-size:18px;line-height:1.95;color:#333}
 .kw{margin-top:24px;display:flex;gap:7px;flex-wrap:wrap}
 .kw span{font-family:'Inter',sans-serif;font-size:13px;color:var(--navy);border:1px solid #d9e2e6;
   background:#f4f8f8;padding:4px 11px;border-radius:2px}
@@ -104,7 +105,7 @@ h2 small{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color
 .pick{border-top:2px solid var(--deep);padding-top:26px;display:flex;flex-direction:column}
 .plabel{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
   color:#fff;background:var(--navy);align-self:flex-start;padding:4px 10px;border-radius:2px}
-.pick h3{font-size:20px;font-weight:600;line-height:1.55;margin:20px 0 12px}
+.pick h3{font-size:20px;font-weight:700;line-height:1.55;margin:20px 0 12px}
 .pick .src{font-size:14px;color:var(--mid);margin-bottom:16px}
 .pick p{font-size:15px;line-height:1.95;color:#3a3a3a;flex:1}
 .pick a{font-family:'Inter',sans-serif;font-size:13px;color:var(--navy);text-decoration:none;
@@ -134,9 +135,9 @@ h2 small{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color
   flex-direction:column}
 .card .kind{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--mint-dim);margin-bottom:12px}
-.card h3{font-size:23px;font-weight:600;margin-bottom:12px;letter-spacing:-.005em}
+.card h3{font-size:23px;font-weight:700;margin-bottom:12px;letter-spacing:-.005em}
 .card .meta{font-size:14px;color:var(--mid);margin-bottom:14px}
-.card p{font-size:17px;line-height:1.95;color:#3a3a3a;flex:1}
+.card p{font-size:18px;line-height:1.95;color:#333;flex:1}
 .card a.go{margin-top:22px;align-self:flex-start}
 
 /* ── 하단 밴드 ────────────────────────────────────────── */
@@ -145,7 +146,7 @@ h2 small{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color
 .band .wrap{display:grid;grid-template-columns:1fr 1fr}
 .bcell{padding:52px 0}
 .bcell+.bcell{border-left:1px solid var(--line);padding-left:56px}
-.bcell h4{font-size:21px;font-weight:600;margin-bottom:10px}
+.bcell h4{font-size:21px;font-weight:700;margin-bottom:10px}
 .bcell p{font-size:15px;color:var(--mid);margin-bottom:18px;line-height:1.85}
 
 /* ── 연락 ─────────────────────────────────────────────── */
@@ -207,7 +208,7 @@ section{scroll-margin-top:82px}
   border-bottom:1px solid var(--line);align-items:baseline}
 .row .rd{font-family:'Inter',sans-serif;font-size:14.5px;color:var(--mint-dim);
   letter-spacing:.02em;white-space:nowrap}
-.row .rt{font-size:18.5px;line-height:1.78}
+.row .rt{font-size:19px;line-height:1.78;font-weight:500}
 .rtag{display:inline-block;font-family:'Inter',sans-serif;font-size:11.5px;letter-spacing:.1em;
   color:var(--navy);border:1px solid #d5dee3;padding:3px 9px;border-radius:2px;margin-right:11px;
   vertical-align:2px;white-space:nowrap}
@@ -234,7 +235,7 @@ ul.plain li::before{content:'';position:absolute;left:0;top:15px;width:5px;heigh
 .cards.one{grid-template-columns:1fr}
 .rtag.i{color:var(--mint-dim);border-color:#cfe3df;background:#f4faf8}
 .au{color:var(--mid)}
-.thesis{display:block;font-size:16px;color:var(--mid);margin-top:7px;line-height:1.7}
+.thesis{display:block;font-size:17px;color:var(--mid);margin-top:7px;line-height:1.7}
 .rt a.tl{color:inherit;text-decoration:none;border-bottom:1px solid #cfd9de}
 .rt a.tl:hover{border-color:var(--mint-dim);color:var(--navy)}
 .doitag{display:inline-block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.1em;
