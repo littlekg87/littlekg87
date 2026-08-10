@@ -17,7 +17,7 @@ a{color:inherit}
 .brand{font-size:17px;font-weight:600;letter-spacing:.03em;color:#fff;text-decoration:none}
 .brand span{font-family:'Inter',sans-serif;font-size:12px;font-weight:400;letter-spacing:.14em;
   color:rgba(255,255,255,.55);margin-left:10px}
-.menu{display:flex;gap:34px;font-size:15px}
+.menu{display:flex;gap:32px;font-size:16px}
 .menu a{color:rgba(255,255,255,.85);text-decoration:none;padding-bottom:4px;
   border-bottom:1px solid transparent}
 .menu a:hover,.menu a.on{border-color:var(--mint);color:#fff}
@@ -32,16 +32,16 @@ a{color:inherit}
 .hin{display:grid;grid-template-columns:1.15fr .85fr;gap:80px;align-items:center;
   padding:108px 0 112px}
 .rule{width:52px;height:2px;background:var(--mint);margin-bottom:28px}
-.eyebrow{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;
+.eyebrow{font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;
   color:var(--mint);margin-bottom:22px}
 .hin h1{font-size:80px;font-weight:600;line-height:1.06;letter-spacing:-.025em}
 .hin h1 em{font-style:normal;display:block;font-family:'Inter',sans-serif;font-size:21px;
   font-weight:300;letter-spacing:.18em;color:rgba(255,255,255,.55);margin-top:18px}
-.tag{margin-top:34px;font-size:21px;line-height:1.95;color:rgba(255,255,255,.92);max-width:28em}
+.tag{margin-top:34px;font-size:22.5px;line-height:1.95;color:rgba(255,255,255,.92);max-width:28em}
 .tag b{color:var(--mint);font-weight:600}
-.affil{margin:28px 0 44px;font-size:14.5px;line-height:1.95;color:rgba(255,255,255,.58)}
+.affil{margin:28px 0 44px;font-size:15.5px;line-height:1.95;color:rgba(255,255,255,.58)}
 .acts{display:flex;gap:11px;flex-wrap:wrap}
-.btn{font-family:'Inter',sans-serif;font-size:14px;text-decoration:none;padding:12px 22px;
+.btn{font-family:'Inter',sans-serif;font-size:15px;text-decoration:none;padding:12px 22px;
   border:1px solid rgba(255,255,255,.36);color:#fff;border-radius:2px;transition:.18s;
   display:inline-block}
 .btn.fill{background:var(--mint);border-color:var(--mint);color:#0B2236;font-weight:500}
@@ -60,12 +60,12 @@ section{padding-top:140px;padding-bottom:140px}
 section+section{padding-top:0}
 .shead{margin-bottom:60px}
 .headrow{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
-h2{font-size:34px;font-weight:600;letter-spacing:-.01em;position:relative;padding-left:21px}
+h2{font-size:36px;font-weight:600;letter-spacing:-.01em;position:relative;padding-left:21px}
 h2::before{content:'';position:absolute;left:0;top:11px;bottom:11px;width:3px;background:var(--mint-dim)}
-h2 small{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.2em;color:var(--mint-dim);
+h2 small{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color:var(--mint-dim);
   text-transform:uppercase;display:block;margin-bottom:10px;font-weight:400}
-.lede{margin-top:18px;font-size:17px;color:var(--mid);max-width:46em;line-height:1.95}
-.more{font-family:'Inter',sans-serif;font-size:13px;color:var(--navy);text-decoration:none;
+.lede{margin-top:18px;font-size:18.5px;color:var(--mid);max-width:46em;line-height:1.95}
+.more{font-family:'Inter',sans-serif;font-size:14px;color:var(--navy);text-decoration:none;
   border-bottom:1px solid var(--mint-dim);padding-bottom:2px;white-space:nowrap}
 .prose p{font-size:17px;line-height:2.05;color:#2e2e2e;max-width:44em}
 .prose p+p{margin-top:22px}
@@ -92,10 +92,10 @@ h2 small{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.2em;color
 .axis .fig img,.axis .fig svg{max-height:100%;max-width:100%;object-fit:contain}
 .axis .bd{padding:34px 38px 40px;display:flex;flex-direction:column;flex:1}
 .axis .no{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.2em;color:var(--mint-dim)}
-.axis h3{font-size:24px;font-weight:600;margin:11px 0 16px;letter-spacing:-.01em}
-.axis p{font-size:15.5px;line-height:2;color:#3a3a3a}
+.axis h3{font-size:25px;font-weight:600;margin:11px 0 16px;letter-spacing:-.01em}
+.axis p{font-size:17px;line-height:1.95;color:#3a3a3a}
 .kw{margin-top:24px;display:flex;gap:7px;flex-wrap:wrap}
-.kw span{font-family:'Inter',sans-serif;font-size:12px;color:var(--navy);border:1px solid #d9e2e6;
+.kw span{font-family:'Inter',sans-serif;font-size:13px;color:var(--navy);border:1px solid #d9e2e6;
   background:#f4f8f8;padding:4px 11px;border-radius:2px}
 .axis .go{margin-top:22px;align-self:flex-start}
 
@@ -132,11 +132,11 @@ h2 small{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.2em;color
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:36px}
 .card{border:1px solid var(--line);background:#fff;padding:34px 36px 38px;display:flex;
   flex-direction:column}
-.card .kind{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+.card .kind{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--mint-dim);margin-bottom:12px}
-.card h3{font-size:22px;font-weight:600;margin-bottom:12px;letter-spacing:-.005em}
+.card h3{font-size:23px;font-weight:600;margin-bottom:12px;letter-spacing:-.005em}
 .card .meta{font-size:14px;color:var(--mid);margin-bottom:14px}
-.card p{font-size:15.5px;line-height:1.95;color:#3a3a3a;flex:1}
+.card p{font-size:17px;line-height:1.95;color:#3a3a3a;flex:1}
 .card a.go{margin-top:22px;align-self:flex-start}
 
 /* ── 하단 밴드 ────────────────────────────────────────── */
@@ -155,7 +155,7 @@ h2 small{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.2em;color
 .contact .item p{font-size:16.5px;line-height:1.85}
 .contact .item a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--mint-dim)}
 
-footer{background:var(--deep);color:rgba(255,255,255,.62);padding:60px 0 72px;font-size:14px;
+footer{background:var(--deep);color:rgba(255,255,255,.62);padding:60px 0 72px;font-size:15px;
   line-height:1.9}
 footer a{color:var(--mint);text-decoration:none}
 footer .fgrid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
@@ -205,23 +205,23 @@ section{scroll-margin-top:82px}
 .listing{border-top:1px solid var(--line)}
 .row{display:grid;grid-template-columns:132px 1fr;gap:28px;padding:20px 0;
   border-bottom:1px solid var(--line);align-items:baseline}
-.row .rd{font-family:'Inter',sans-serif;font-size:13.5px;color:var(--mint-dim);
+.row .rd{font-family:'Inter',sans-serif;font-size:14.5px;color:var(--mint-dim);
   letter-spacing:.02em;white-space:nowrap}
-.row .rt{font-size:17px;line-height:1.75}
-.rtag{display:inline-block;font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:.12em;
-  color:var(--navy);border:1px solid #d5dee3;padding:2px 8px;border-radius:2px;margin-left:10px;
+.row .rt{font-size:18.5px;line-height:1.78}
+.rtag{display:inline-block;font-family:'Inter',sans-serif;font-size:11.5px;letter-spacing:.1em;
+  color:var(--navy);border:1px solid #d5dee3;padding:3px 9px;border-radius:2px;margin-right:11px;
   vertical-align:2px;white-space:nowrap}
-.doi{display:block;font-family:'Inter',sans-serif;font-size:13px;color:var(--navy);
+.doi{display:block;font-family:'Inter',sans-serif;font-size:14px;color:var(--navy);
   text-decoration:none;margin-top:6px;border-bottom:1px solid var(--mint-dim);
   width:fit-content;padding-bottom:1px}
 .toggle{display:block;width:100%;margin:0;padding:16px 0;background:none;border:0;
-  border-bottom:1px solid var(--line);font-family:'Inter',sans-serif;font-size:13px;
+  border-bottom:1px solid var(--line);font-family:'Inter',sans-serif;font-size:14.5px;
   letter-spacing:.06em;color:var(--navy);cursor:pointer;text-align:left}
 .toggle:hover{color:var(--mint-dim)}
 .toggle .lb-close{display:none}
 .toggle[aria-expanded="true"] .lb-open{display:none}
 .toggle[aria-expanded="true"] .lb-close{display:inline}
-.rest .yr{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.2em;color:var(--mint-dim);
+.rest .yr{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color:var(--mint-dim);
   padding:30px 0 8px}
 ul.plain{list-style:none;margin-top:4px}
 ul.plain li{font-size:15.5px;line-height:2.1;color:#3a3a3a;padding-left:14px;position:relative}
@@ -233,3 +233,5 @@ ul.plain li::before{content:'';position:absolute;left:0;top:15px;width:5px;heigh
 }
 .cards.one{grid-template-columns:1fr}
 .rtag.i{color:var(--mint-dim);border-color:#cfe3df;background:#f4faf8}
+.au{color:var(--mid)}
+.thesis{display:block;font-size:16px;color:var(--mid);margin-top:7px;line-height:1.7}

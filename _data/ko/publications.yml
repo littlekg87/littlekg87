@@ -15,29 +15,36 @@
 #        featured: true
 # ─────────────────────────────────────────────────────────────
 
+- date: "2026"
+  kind: "논문"
+  title: "데이터는 어떻게 AI의 답변을 바꾸는가 : RAG 세종실록지리지의 데이터 구조화 방식에 따른 응답 비교 실험"
+  venue: "한문학논집 72"
+
 - date: "2025.12"
   kind: "논문"
   title: "데이터셋으로서 한국사연구휘보와 한국사 연구사 분석의 새로운 가능성"
   venue: "한국사학사학보 52"
   featured: true
+  authors: "김근하, 송치영(이상 공동저자)"
 
 - date: "2025.11"
   kind: "저서"
   title: "망원동"
   venue: "서울 洞의 역사: 마포구 제4권, 서울역사편찬원"
-  note: "공동저자"
+  authors: "김근하, 소순규, 이봉규, 김희식(이상 공동저자)"
 
 - date: "2025.11"
   kind: "저서"
   title: "The Military Revolution in Late Chosun: Interpretations and Reflecions"
   venue: "Confucianism·Nation·Uniqueness, 서강대학교출판부"
-  note: "공동저자"
+  authors: "계승범 외 7명 공동저자"
 
 - date: "2025.09"
   kind: "논문"
   title: "조선 전기 군역의 형평성 측정 : GIS와 불평등 지표를 활용한 디지털 인문학적 분석"
   venue: "역사와현실 137"
   featured: true
+  authors: "김근하(제1저자), 우동현(교신저자)"
 
 - date: "2025.09"
   kind: "논문"
@@ -48,6 +55,7 @@
   kind: "논문"
   title: "Was There a Military Revolution in Late Joseon Korea?"
   venue: "JNAH 21-2"
+  authors: "김근하, 윤덕희(이상 공동저자)"
 
 - date: "2023.12"
   kind: "논문"

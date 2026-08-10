@@ -16,10 +16,10 @@ TOP_N = 3  # 상단에 노출할 대표 항목 수
 
 LABELS = {
     "ko": dict(
-        career="경력", publications="연구성과", talks="학술대회 발표 및 특강",
+        education="학위", career="경력", publications="연구성과", talks="학술대회 발표 및 특강",
         projects="프로젝트 참여 이력", two_axes="연구의 두 축",
         students="학생 성과 소개", data="자료 공개",
-        nav_career="경력", nav_publications="연구성과", nav_talks="발표 · 특강",
+        nav_education="학위", nav_career="경력", nav_publications="연구성과", nav_talks="발표 · 특강",
         nav_projects="프로젝트", nav_research="연구", nav_students="학생 성과",
         nav_data="자료 공개",
         show_all="전체 보기", hide="접기", open="열기", courses="담당 과목",
@@ -30,10 +30,10 @@ LABELS = {
         diagram_alt="Ask Sillok 구조 개념도",
     ),
     "en": dict(
-        career="Career", publications="Publications", talks="Talks & Lectures",
+        education="Education", career="Career", publications="Publications", talks="Talks & Lectures",
         projects="Research Projects", two_axes="Two Lines of Inquiry",
         students="Student Work", data="Data & Code",
-        nav_career="Career", nav_publications="Publications", nav_talks="Talks",
+        nav_education="Education", nav_career="Career", nav_publications="Publications", nav_talks="Talks",
         nav_projects="Projects", nav_research="Research", nav_students="Students",
         nav_data="Data",
         show_all="Show all", hide="Collapse", open="Open", courses="Courses",
@@ -45,7 +45,7 @@ LABELS = {
     ),
 }
 
-NAV = [("career", "nav_career"), ("publications", "nav_publications"),
+NAV = [("education", "nav_education"), ("career", "nav_career"), ("publications", "nav_publications"),
        ("talks", "nav_talks"), ("projects", "nav_projects"),
        ("research", "nav_research"), ("students", "nav_students"),
        ("data", "nav_data")]
@@ -71,8 +71,8 @@ def build_section(items, make):
     top = [r for r in norm if r.get("_featured")][:TOP_N]
     if not top:
         top = norm[:TOP_N]
-    keys = {id(r) for r in top}
-    rest = [r for r in norm if id(r) not in keys]
+    # 전체 목록에는 대표 항목도 포함한다(연도별로 빠짐없이 보이도록)
+    rest = norm
     groups, cur = [], None
     for r in rest:
         y = year_of(r["date"])
@@ -125,16 +125,16 @@ def main():
             return Markup(str(out).replace(str(me), "<b>%s</b>" % me))
 
         def compose(x):
-            parts = []
-            au = authors_html(x)
-            if au:
-                parts.append(au)
-            parts.append(escape(x.get("title", "")))
+            parts = [escape(x.get("title", ""))]
             if x.get("venue"):
                 parts.append(escape(x["venue"]))
             if x.get("note"):
                 parts.append(escape(x["note"]))
-            return Markup(", ".join(str(s) for s in parts))
+            line = ", ".join(str(s) for s in parts)
+            au = authors_html(x)
+            if au:
+                line += " <span class='au'>(%s)</span>" % au
+            return Markup(line)
 
         def tags_of(x):
             out = []
@@ -167,6 +167,7 @@ def main():
             sec_pubs=build_section(load(lang, "publications", []), mk_pub),
             sec_talks=build_section(load(lang, "talks", []), mk_talk),
             sec_projects=build_section(load(lang, "projects", []), mk_proj),
+            education=(p.get("education") or []),
             research=load(lang, "research", {}),
             teaching=load(lang, "teaching", {}),
             datasets=load(lang, "datasets", {"items": []}),

@@ -12,15 +12,37 @@
 #        featured: true
 # ─────────────────────────────────────────────────────────────
 
+- date: "2026.07"
+  kind: "국제학술대회"
+  title: "Build a Working RAG in Half a Day: UN Policy Reports with LangChain"
+  venue: "DH2026: Engagement (ADHO), 대전 · 워크숍"
+  featured: true
+
+- date: "2026.07"
+  kind: "국제학술대회"
+  title: "From Searchable Archives to Askable Archives: Designing a RAG-Based Research Interface for The Annals of the Joseon Dynasty"
+  venue: "DH2026: Engagement (ADHO), 대전 · Short Paper"
+  featured: true
+
+- date: "2026.07"
+  kind: "국제학술대회"
+  title: "A Distant Reading of the Bulletin of Korean Historical Studies: Temporal Consciousness in Korean Historiographical Publications"
+  venue: "DH2026: Engagement (ADHO), 대전 · Long Paper"
+
+- date: "2026.03"
+  kind: "국내학술대회"
+  title: "한문 텍스트는 어떻게 AI에게 '읽히는가' : 세종실록지리지 XML과 RAG시스템 구축 실험"
+  venue: "근역한문학회 춘계학술대회, 단국대학교"
+
 - date: "2026.01"
   kind: "특강"
   title: "디지털인문학, 그게 뭔데?"
   venue: "부산대 HUSS사업단 특강"
 
 - date: "2026.01"
-  kind: "국제학술대회발표"
+  kind: "국제학술대회"
   title: "Distant Viewing Inequality: A Digital Humanities Study of Joseon Conscription"
-  venue: "2026 HKADH(홍콩디지털인문학대회)"
+  venue: "HKADH 2026, 홍콩중문대학교"
   featured: true
 
 - date: "2026.01"
@@ -85,7 +107,7 @@
   venue: "서강대학교 인문과학연구소 추계학술대회"
 
 - date: "2024.03"
-  kind: "국제학술대회 토론"
+  kind: "국제학술대회"
   title: "일본에서 본 근세의 조중관계"
   venue: "근세동아시아의 소통과 교류 (서강대 디지털역사연구소·나고야대)"
 

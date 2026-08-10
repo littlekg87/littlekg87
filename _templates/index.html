@@ -6,7 +6,7 @@
   <div class="row">
     <div class="rd">{{ x.date }}</div>
     <div class="rt">
-      {{ x.line }}{% for g in x.tags %}<span class="rtag {{ g.cls }}">{{ g.text }}</span>{% endfor %}
+      {% for g in x.tags %}<span class="rtag {{ g.cls }}">{{ g.text }}</span>{% endfor %}{{ x.line }}
       {% if x.doi %}<a class="doi" href="https://doi.org/{{ x.doi }}">doi.org/{{ x.doi }}</a>{% endif %}
     </div>
   </div>
@@ -48,6 +48,21 @@
   </div>
   <div class="pf"><img src="{{ root }}assets/img/profile.jpg" alt="{{ p.name }}"></div>
 </div></div>
+
+<section class="wrap" id="education">
+  <div class="shead"><h2><small>Education</small>{{ t.education }}</h2></div>
+  <div class="listing">
+    {% for e in education %}
+    <div class="row">
+      <div class="rd">{{ e.date }}</div>
+      <div class="rt">
+        <span class="rtag k">{{ e.kind }}</span>{{ e.org }}
+        {% if e.thesis %}<span class="thesis">「{{ e.thesis }}」</span>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
 <section class="wrap" id="career">
   <div class="shead"><h2><small>Career</small>{{ t.career }}</h2></div>
