@@ -17,5 +17,5 @@ items:
   - title: "세종실록지리지 데이터베이스"
     kind: "데이터셋 · 코드"
     body: "『세종실록지리지』의 인구와 군사 기록을 정제한 통합 DB와 텍스트마이닝 코드를 공개합니다."
-    link: "https://github.com/littlekg87"
+    link: "https://github.com/littlekg87/Sejong_Sillok_Jiriji"
     link_label: "저장소"
