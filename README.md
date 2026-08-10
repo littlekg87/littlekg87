@@ -7,7 +7,11 @@
 
 **경력 · 연구성과 · 학술대회 발표 · 프로젝트 · 강의 자료를 한곳에서 보실 수 있습니다.**
 <br>
+**위의 url은 제 포트폴리오이고, 아래는 제 연구에 대한 소개입니다.**
+<br><br>
 *Career, publications, conference talks, projects, and teaching materials — all in one place.*
+<br>
+*The link above is my portfolio; below is an introduction to my research.*
 
 <br>
 
