@@ -1,18 +1,13 @@
 <div align="center">
 
-# 🌐 [kunslab.com](https://kunslab.com/)
+# 김근하 연구 포트폴리오
+### Kunha Kim — Research Portfolio
 
-### 김근하 연구 포트폴리오 · Kunha Kim — Research Portfolio
+## 🌐 [kunslab.com](https://kunslab.com/)
 
 **경력 · 연구성과 · 학술대회 발표 · 프로젝트 · 강의 자료를 한곳에서 보실 수 있습니다.**
 <br>
 *Career, publications, conference talks, projects, and teaching materials — all in one place.*
-
-<br>
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-kunslab.com-143963?style=for-the-badge)](https://kunslab.com/)
-[![Ask Sillok](https://img.shields.io/badge/Ask_Sillok-RAG_for_the_Annals-7FCBBE?style=for-the-badge)](https://beta.asksillok.com/)
-[![Email](https://img.shields.io/badge/Email-littlekg87@gmail.com-5c5c5c?style=for-the-badge)](mailto:littlekg87@gmail.com)
 
 <br>
 
@@ -97,7 +92,7 @@ I also welcome scholarly exchange on Joseon military institutions, military serv
 
 > *My recurring research question is: How can we transform historical sources into data and AI systems without losing their context?*
 
-<div align="right"><a href="#-kunslabcom">↑ 맨 위로 / Back to top</a></div>
+<div align="right"><a href="#김근하-연구-포트폴리오">↑ 맨 위로 / Back to top</a></div>
 
 ---
 
@@ -176,4 +171,4 @@ I also welcome scholarly exchange on Joseon military institutions, military serv
 
 > *제가 반복해서 던지는 연구 질문은 이것입니다. 역사적 맥락을 잃지 않으면서 사료를 데이터와 AI 시스템으로 전환하려면 어떻게 해야 하는가?*
 
-<div align="right"><a href="#-kunslabcom">↑ 맨 위로 / Back to top</a></div>
+<div align="right"><a href="#김근하-연구-포트폴리오">↑ 맨 위로 / Back to top</a></div>
