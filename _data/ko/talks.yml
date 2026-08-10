@@ -12,6 +12,16 @@
 #        featured: true
 # ─────────────────────────────────────────────────────────────
 
+- date: "2026.04"
+  kind: "특강"
+  title: "미래의 과거: AI의 역사 (The Future from the Past: The History of AI)"
+  venue: "서강대학교 사학과 · 서강대학교 디지털역사연구소, 역사학입문 특강"
+
+- date: "2026.02"
+  kind: "특강"
+  title: "난중일기의 텍스트 분석과 인간 이순신"
+  venue: "서울 중구 문화관광해설사 역량강화교육 아카데미"
+
 - date: "2026.07"
   kind: "국제학술대회"
   title: "Build a Working RAG in Half a Day: UN Policy Reports with LangChain"

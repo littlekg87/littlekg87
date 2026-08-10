@@ -21,12 +21,12 @@
   venue: "한문학논집 72"
   doi: "10.17260/jklc.2026.74..49"
   kci: "ART003361051"
+  featured: true
 
 - date: "2025.12"
   kind: "KCI등재"
   title: "데이터셋으로서 한국사연구휘보와 한국사 연구사 분석의 새로운 가능성"
   venue: "한국사학사학보 52"
-  featured: true
   authors: "김근하, 송치영(이상 공동저자)"
   doi: "10.29186/kjhh.2025.52.83"
   kci: "ART003296014"
