@@ -16,87 +16,100 @@
 # ─────────────────────────────────────────────────────────────
 
 - date: "2026"
-  kind: "논문"
+  kind: "KCI등재"
   title: "데이터는 어떻게 AI의 답변을 바꾸는가 : RAG 세종실록지리지의 데이터 구조화 방식에 따른 응답 비교 실험"
   venue: "한문학논집 72"
+  doi: "10.17260/jklc.2026.74..49"
+  kci: "ART003361051"
 
 - date: "2025.12"
-  kind: "논문"
+  kind: "KCI등재"
   title: "데이터셋으로서 한국사연구휘보와 한국사 연구사 분석의 새로운 가능성"
   venue: "한국사학사학보 52"
   featured: true
   authors: "김근하, 송치영(이상 공동저자)"
+  doi: "10.29186/kjhh.2025.52.83"
+  kci: "ART003296014"
 
 - date: "2025.11"
   kind: "저서"
   title: "망원동"
-  venue: "서울 洞의 역사: 마포구 제4권, 서울역사편찬원"
+  venue: "서울 洞의 역사: 마포구 제4권"
+  publisher: "서울역사편찬원"
   authors: "김근하, 소순규, 이봉규, 김희식(이상 공동저자)"
 
 - date: "2025.11"
   kind: "저서"
   title: "The Military Revolution in Late Chosun: Interpretations and Reflecions"
-  venue: "Confucianism·Nation·Uniqueness, 서강대학교출판부"
+  venue: "Confucianism·Nation·Uniqueness"
+  publisher: "서강대학교출판부"
   authors: "계승범 외 7명 공동저자"
 
 - date: "2025.09"
-  kind: "논문"
+  kind: "KCI등재"
   title: "조선 전기 군역의 형평성 측정 : GIS와 불평등 지표를 활용한 디지털 인문학적 분석"
   venue: "역사와현실 137"
   featured: true
   authors: "김근하(제1저자), 우동현(교신저자)"
+  doi: "10.35865/YWH.2025.06.136.247"
+  kci: "ART003255692"
 
 - date: "2025.09"
-  kind: "논문"
+  kind: "KCI등재"
   title: "조선 전기 保法의 성립과 군역 동원 표준 단위의 균질화"
   venue: "조선시대사학보 114"
+  kci: "ART003254028"
 
 - date: "2025.02"
-  kind: "논문"
+  kind: "기타논문"
   title: "Was There a Military Revolution in Late Joseon Korea?"
   venue: "JNAH 21-2"
   authors: "김근하, 윤덕희(이상 공동저자)"
 
 - date: "2023.12"
-  kind: "논문"
+  kind: "KCI등재"
   title: "조선 전기 軍役 代立의 인식 변화"
   venue: "서강인문논총 68"
+  doi: "10.37981/hjhrisu.2023.12.68.173"
+  kci: "ART003035971"
 
 - date: "2023.12"
-  kind: "논문"
+  kind: "KCI등재"
   title: "조선 전기 軍役 代立의 유형과 代立制 정비 - 代立價布 납부 방식을 중심으로 -"
   venue: "백산학보 127"
 
 - date: "2023.11"
-  kind: "논문"
+  kind: "KCI등재"
   title: "15~16세기 軍役의 代立價 변동 양상"
   venue: "조선시대사학보 107"
+  kci: "ART003041434"
 
 - date: "2023.07"
-  kind: "논문"
+  kind: "박사학위논문"
   title: "조선 전기 대립(代立)의 전개와 군역 수행 비용의 표준화"
   venue: "서강대학교 일반대학원 사학과"
-  note: "박사학위논문"
+
   featured: true
 
 - date: "2022.12"
-  kind: "논문"
+  kind: "기타논문"
   title: "16세기 군역제도를 이용한 영리활동 사례"
   venue: "군사사연구총서 10"
 
 - date: "2017.08"
-  kind: "논문"
+  kind: "KCI등재"
   title: "朝鮮成宗代代立의 일면 - 鄭誠謹彈劾事件을 중심으로 -"
   venue: "서강인문논총 49"
 
 - date: "2016.09"
-  kind: "논문"
+  kind: "KCI등재"
   title: "丁丑約條의 성격과 顯宗代 安秋元 사건"
   venue: "조선시대사학보 78"
   featured: true
+  kci: "ART002155361"
 
 - date: "2015.08"
-  kind: "논문"
+  kind: "석사학위논문"
   title: "정축약조로 본 현종~숙종 대 조청관계 : 안추원 사건과 북한산성 수축 논의를 중심으로"
   venue: "서강대학교 일반대학원 사학과"
-  note: "석사학위논문"
+

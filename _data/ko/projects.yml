@@ -10,6 +10,18 @@
 #  ※ 연구비 금액은 게시하지 않습니다.
 # ─────────────────────────────────────────────────────────────
 
+- period: "2026.08 — 2029.07"
+  title: "냉전기 부산의 구호물자DB화를 통한 포용사회 형성 연구"
+  org: "한국학중앙연구원 한국학기초자료사업"
+  role: "공동연구원"
+  featured: true
+
+- period: "2026.06 — 2031.05"
+  title: "조선시대 지역별 군역 분포의 장기 변화 연구 - 자연어 질의(NLQ) 기반 군역 데이터베이스 구축을 통한 접근"
+  org: "한국연구재단 인문학술 연구교수 A유형"
+  role: "책임연구원"
+  featured: true
+
 - period: "2023.09 — 2024.12"
   title: "Confucianism, Uniqueness, Nation — Historical approaches to Joseon Korea"
   org: "서강대학교 출판부"

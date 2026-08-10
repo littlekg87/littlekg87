@@ -60,6 +60,7 @@
   title: "연구조교수"
   org: "KAIST 디지털인문사회과학센터"
   kind: "교원"
+  featured: true
 
 - period: "2024.03 — 2024.08"
   title: "강사"

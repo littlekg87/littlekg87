@@ -124,17 +124,59 @@ def main():
             me = escape(p["name"])
             return Markup(str(out).replace(str(me), "<b>%s</b>" % me))
 
+        BRACKET = ("논문", "기타논문", "저서", "KCI등재", "KCI등재후보",
+                   "SCOPUS", "SSCI", "SCIE", "A&HCI", "ESCI")          # 학술지·서명에 겹낫표를 두르는 유형
+
+        def venue_html(x):
+            """학술지명·서명은 『 』 안에, 권호와 출판사는 밖에 둔다."""
+            v = (x.get("venue") or "").strip()
+            if not v:
+                return None
+            if x.get("kind") not in BRACKET:
+                return escape(v)
+            m = re.match(r"^(.*?)\s+([0-9][0-9()\-–~.\s]*)$", v)
+            name, no = (m.group(1), m.group(2).strip()) if m else (v, "")
+            out = "『%s』" % escape(name)
+            if no:
+                out += " " + escape(no)
+            if x.get("publisher"):
+                out += ", " + str(escape(x["publisher"]))
+            return Markup(out)
+
+        KCI_URL = ("https://www.kci.go.kr/kciportal/ci/sereArticleSearch/"
+                   "ciSereArtiView.kci?sereArticleSearchBean.artiId=")
+
+        def link_of(x):
+            if x.get("doi"):
+                return "https://doi.org/" + str(escape(x["doi"])), "DOI"
+            if x.get("kci"):
+                return KCI_URL + str(escape(x["kci"])), "KCI"
+            return None, None
+
+        def title_html(x):
+            t = escape(x.get("title", ""))
+            href, _ = link_of(x)
+            if href:
+                return Markup('<a class="tl" href="%s">%s</a>' % (href, t))
+            return t
+
         def compose(x):
-            parts = [escape(x.get("title", ""))]
-            if x.get("venue"):
-                parts.append(escape(x["venue"]))
+            parts = [title_html(x)]
+            v = venue_html(x)
+            if v:
+                parts.append(v)
             if x.get("note"):
                 parts.append(escape(x["note"]))
             line = ", ".join(str(s) for s in parts)
             au = authors_html(x)
             if au:
                 line += " <span class='au'>(%s)</span>" % au
+            href, label = link_of(x)
+            if href:
+                line += ' <a class="doitag" href="%s">%s</a>' % (href, label)
             return Markup(line)
+
+        TIERS = ("KCI등재", "KCI등재후보", "SCOPUS", "SSCI", "SCIE", "A&HCI", "ESCI")
 
         def tags_of(x):
             out = []
@@ -142,12 +184,12 @@ def main():
                 out.append(dict(text=x["kind"], cls="k"))
             idx = x.get("index")
             for i in ([idx] if isinstance(idx, str) else (idx or [])):
-                out.append(dict(text=i, cls="i"))
+                out.append(dict(text=i, cls="k"))
             return out
 
         def mk_pub(x):
             return dict(date=x.get("date", ""), line=compose(x), tags=tags_of(x),
-                        doi=x.get("doi"), _sort=str(x.get("date", "")),
+                        _sort=str(x.get("date", "")),
                         _featured=x.get("featured"))
 
         def mk_talk(x):
