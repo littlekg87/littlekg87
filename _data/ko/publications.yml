@@ -1,0 +1,94 @@
+# ─────────────────────────────────────────────────────────────
+#  연구성과 — 저서와 논문
+#
+#  ■ 반드시 필요한 세 줄
+#      - date:  "2025.09"
+#        title: "제목"
+#        venue: "학술지 권호 또는 출판사"
+#
+#  ■ 필요할 때만 덧붙이는 줄
+#        kind:    "논문"          저서 / 논문
+#        index:   "KCI등재"       여러 개면  index: ["SSCI", "SCOPUS"]
+#        authors: "김근하 · 홍길동"  공저일 때만. 본인 이름은 자동으로 굵게
+#        doi:     "10.1234/abcd"  https://doi.org/ 는 빼고 숫자부터
+#        note:    "박사학위논문"
+#        featured: true
+# ─────────────────────────────────────────────────────────────
+
+- date: "2025.12"
+  kind: "논문"
+  title: "데이터셋으로서 한국사연구휘보와 한국사 연구사 분석의 새로운 가능성"
+  venue: "한국사학사학보 52"
+  featured: true
+
+- date: "2025.11"
+  kind: "저서"
+  title: "망원동"
+  venue: "서울 洞의 역사: 마포구 제4권, 서울역사편찬원"
+  note: "공동저자"
+
+- date: "2025.11"
+  kind: "저서"
+  title: "The Military Revolution in Late Chosun: Interpretations and Reflecions"
+  venue: "Confucianism·Nation·Uniqueness, 서강대학교출판부"
+  note: "공동저자"
+
+- date: "2025.09"
+  kind: "논문"
+  title: "조선 전기 군역의 형평성 측정 : GIS와 불평등 지표를 활용한 디지털 인문학적 분석"
+  venue: "역사와현실 137"
+  featured: true
+
+- date: "2025.09"
+  kind: "논문"
+  title: "조선 전기 保法의 성립과 군역 동원 표준 단위의 균질화"
+  venue: "조선시대사학보 114"
+
+- date: "2025.02"
+  kind: "논문"
+  title: "Was There a Military Revolution in Late Joseon Korea?"
+  venue: "JNAH 21-2"
+
+- date: "2023.12"
+  kind: "논문"
+  title: "조선 전기 軍役 代立의 인식 변화"
+  venue: "서강인문논총 68"
+
+- date: "2023.12"
+  kind: "논문"
+  title: "조선 전기 軍役 代立의 유형과 代立制 정비 - 代立價布 납부 방식을 중심으로 -"
+  venue: "백산학보 127"
+
+- date: "2023.11"
+  kind: "논문"
+  title: "15~16세기 軍役의 代立價 변동 양상"
+  venue: "조선시대사학보 107"
+
+- date: "2023.07"
+  kind: "논문"
+  title: "조선 전기 대립(代立)의 전개와 군역 수행 비용의 표준화"
+  venue: "서강대학교 일반대학원 사학과"
+  note: "박사학위논문"
+  featured: true
+
+- date: "2022.12"
+  kind: "논문"
+  title: "16세기 군역제도를 이용한 영리활동 사례"
+  venue: "군사사연구총서 10"
+
+- date: "2017.08"
+  kind: "논문"
+  title: "朝鮮成宗代代立의 일면 - 鄭誠謹彈劾事件을 중심으로 -"
+  venue: "서강인문논총 49"
+
+- date: "2016.09"
+  kind: "논문"
+  title: "丁丑約條의 성격과 顯宗代 安秋元 사건"
+  venue: "조선시대사학보 78"
+  featured: true
+
+- date: "2015.08"
+  kind: "논문"
+  title: "정축약조로 본 현종~숙종 대 조청관계 : 안추원 사건과 북한산성 수축 논의를 중심으로"
+  venue: "서강대학교 일반대학원 사학과"
+  note: "석사학위논문"

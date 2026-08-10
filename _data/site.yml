@@ -1,0 +1,19 @@
+# ─────────────────────────────────────────────────────────────
+#  사이트 공통 정보
+#  국문·영문 페이지가 함께 씁니다. 여기를 고치면 모든 페이지에 반영됩니다.
+# ─────────────────────────────────────────────────────────────
+
+domain: "https://kunslab.com"
+
+email: "littlekg87@gmail.com"
+orcid: "0009-0007-1581-038X"
+orcid_url: "https://orcid.org/0009-0007-1581-038X"
+github: "https://github.com/littlekg87"
+
+# 대표 프로젝트 주소
+asksillok: "https://beta.asksillok.com/"
+lecture_archive: "https://littlekg87.github.io/Lecture_Archive"
+
+# 주소 — 전화번호는 넣지 않습니다
+address_ko: "서울특별시 마포구 백범로 35 서강대학교 정하상관 901호"
+address_en: "Room 901, Jeong Hasang Hall, Sogang University, 35 Baekbeom-ro, Mapo-gu, Seoul, Korea"

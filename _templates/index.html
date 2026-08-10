@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% from "_parts.html" import axis_card %}
+
+{% macro rows(items, kind) %}
+  {% for x in items %}
+  <div class="row">
+    <div class="rd">{{ x.date }}</div>
+    <div class="rt">
+      {{ x.line }}{% for g in x.tags %}<span class="rtag {{ g.cls }}">{{ g.text }}</span>{% endfor %}
+      {% if x.doi %}<a class="doi" href="https://doi.org/{{ x.doi }}">doi.org/{{ x.doi }}</a>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+{% endmacro %}
+
+{% macro listing(sec, t) %}
+<div class="listing">
+  {{ rows(sec.top) }}
+  {% if sec.rest %}
+  <button class="toggle" aria-expanded="false">
+    <span class="lb-open">{{ t.show_all }} ({{ sec.rest|length }})</span>
+    <span class="lb-close">{{ t.hide }}</span>
+  </button>
+  <div class="rest" hidden>
+    {% for grp in sec.groups %}
+      <div class="yr">{{ grp.year }}</div>
+      {{ rows(grp.rows) }}
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% block body %}
+
+<div class="hero"><div class="wrap hin">
+  <div>
+    <div class="rule"></div>
+    <div class="eyebrow">{{ p.eyebrow }}</div>
+    <h1>{{ p.name }}<em>{{ p.name_latin }}</em></h1>
+    <p class="tag">{{ p.tagline|safe }}</p>
+    <div class="affil">{% for a in p.affiliations %}{{ a }}{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
+    <div class="acts">
+      <a class="btn fill" href="#publications">{{ t.publications }}</a>
+      <a class="btn" href="{{ site.asksillok }}">Ask Sillok</a>
+      <a class="btn" href="{{ site.orcid_url }}">ORCID</a>
+    </div>
+  </div>
+  <div class="pf"><img src="{{ root }}assets/img/profile.jpg" alt="{{ p.name }}"></div>
+</div></div>
+
+<section class="wrap" id="career">
+  <div class="shead"><h2><small>Career</small>{{ t.career }}</h2></div>
+  {{ listing(sec_career, t) }}
+</section>
+
+<section class="wrap" id="publications">
+  <div class="shead"><h2><small>Publications</small>{{ t.publications }}</h2></div>
+  {{ listing(sec_pubs, t) }}
+</section>
+
+<section class="wrap" id="talks">
+  <div class="shead"><h2><small>Talks &amp; lectures</small>{{ t.talks }}</h2></div>
+  {{ listing(sec_talks, t) }}
+</section>
+
+<section class="wrap" id="projects">
+  <div class="shead"><h2><small>Projects</small>{{ t.projects }}</h2></div>
+  {% if sec_projects.top or sec_projects.rest %}
+    {{ listing(sec_projects, t) }}
+  {% else %}
+    <p class="lede">{{ t.empty }}</p>
+  {% endif %}
+</section>
+
+<section class="wrap" id="research">
+  <div class="shead">
+    <h2><small>Research</small>{{ t.two_axes }}</h2>
+    <p class="lede">{{ research.intro }}</p>
+  </div>
+  <div class="axes">{% for a in research.axes %}{{ axis_card(a, t, root) }}{% endfor %}</div>
+</section>
+
+<section class="wrap" id="students">
+  <div class="shead">
+    <h2><small>Student work</small>{{ t.students }}</h2>
+    <p class="lede">{{ teaching.intro }}</p>
+  </div>
+  <div class="cards one">
+    <div class="card">
+      <div class="kind">Lecture Archive</div>
+      <h3>{{ t.students }}</h3>
+      <p>{{ teaching.blurb }}</p>
+      <a class="more go" href="{{ site.lecture_archive }}">{{ teaching.link_label }} →</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="data">
+  <div class="shead">
+    <h2><small>Data &amp; code</small>{{ t.data }}</h2>
+    <p class="lede">{{ datasets.intro }}</p>
+  </div>
+  <div class="cards">
+    {% for d in datasets['items'] %}
+    <div class="card">
+      <div class="kind">{{ d.kind }}</div>
+      <h3>{{ d.title }}</h3>
+      <p>{{ d.body }}</p>
+      {% if d.link %}<a class="more go" href="{{ d.link }}">{{ d.link_label }} →</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}
+
+{% block script %}
+<script>
+document.querySelectorAll('.toggle').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var box = b.nextElementSibling, on = box.hasAttribute('hidden');
+    if (on) { box.removeAttribute('hidden'); } else { box.setAttribute('hidden', ''); }
+    b.setAttribute('aria-expanded', on ? 'true' : 'false');
+  });
+});
+</script>
+{% endblock %}

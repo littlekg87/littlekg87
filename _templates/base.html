@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title }} — {{ p.name }}</title>
+<meta name="description" content="{{ meta_desc }}">
+<link rel="canonical" href="{{ site.domain }}{{ canonical }}">
+<meta property="og:title" content="{{ page_title }} — {{ p.name }}">
+<meta property="og:description" content="{{ meta_desc }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.domain }}{{ canonical }}">
+<meta property="og:image" content="{{ site.domain }}/assets/img/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ root }}assets/css/site.css">
+</head>
+<body>
+
+<div class="topbar{% if not is_home %} solid{% endif %}">
+  <div class="wrap">
+    <a class="brand" href="{{ base }}">{{ p.name }} <span>{{ p.name_latin }}</span></a>
+    <nav class="menu" id="menu">
+      {% for m in nav %}<a href="{{ m.href }}"{% if m.key == active %} class="on"{% endif %}>{{ m.label }}</a>{% endfor %}
+    </nav>
+    {% if show_lang %}
+    <div class="lang">
+      {% if lang == 'ko' %}<span class="cur">KO</span> / <a href="{{ en_href }}">EN</a>
+      {% else %}<a href="{{ ko_href }}">KO</a> / <span class="cur">EN</span>{% endif %}
+    </div>
+    {% endif %}
+    <button class="navtoggle" id="navtoggle" aria-label="menu">MENU</button>
+  </div>
+</div>
+
+{% block body %}{% endblock %}
+
+<footer><div class="wrap fgrid">
+  <div>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+    {{ address }}
+  </div>
+  <div style="text-align:right">
+    ORCID <a href="{{ site.orcid_url }}">{{ site.orcid }}</a><br>
+    <a href="{{ site.github }}">GitHub</a> · <a href="{{ site.asksillok }}">Ask Sillok</a>
+  </div>
+</div></footer>
+
+<script>
+document.getElementById('navtoggle').addEventListener('click',function(){
+  document.getElementById('menu').classList.toggle('open');
+});
+</script>
+{% block script %}{% endblock %}
+</body>
+</html>

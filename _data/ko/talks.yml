@@ -1,0 +1,110 @@
+# ─────────────────────────────────────────────────────────────
+#  학술대회 발표 및 특강
+#
+#  ■ 반드시 필요한 세 줄
+#      - date:  "2026.01"
+#        title: "제목"
+#        venue: "학회명 또는 주최기관"
+#
+#  ■ 필요할 때만 덧붙이는 줄
+#        kind:    "국제학술대회"   국제학술대회 / 국내학술대회 / 토론 / 특강 / 비교과강좌
+#        authors: "김근하 · 홍길동"  공동 발표일 때만
+#        featured: true
+# ─────────────────────────────────────────────────────────────
+
+- date: "2026.01"
+  kind: "특강"
+  title: "디지털인문학, 그게 뭔데?"
+  venue: "부산대 HUSS사업단 특강"
+
+- date: "2026.01"
+  kind: "국제학술대회발표"
+  title: "Distant Viewing Inequality: A Digital Humanities Study of Joseon Conscription"
+  venue: "2026 HKADH(홍콩디지털인문학대회)"
+  featured: true
+
+- date: "2026.01"
+  kind: "특강"
+  title: "그날의 이순신"
+  venue: "국립중앙박물관 '우리들의 이순신' 특별연계강좌"
+
+- date: "2025.09~2025.11"
+  kind: "비교과강좌"
+  title: "글자 너머의 세계–텍스트마이닝 실험실"
+  venue: "서강대 자유전공학부 비교과"
+
+- date: "2025.08"
+  kind: "특강"
+  title: "세종실록지리지·디지털역사학"
+  venue: "경북대 BK21 하계 특별강좌"
+
+- date: "2025.10"
+  kind: "국제학술대회"
+  title: "Was the Military Service System in Joseon Fair? A Digital Historical Approach to the Military Institution of the Joseon Dynasty"
+  venue: "CHS Monthly Meeting (Chosun History Society)"
+
+- date: "2025.05"
+  kind: "비교과강좌"
+  title: "인문학적 주제를 다룬 디지털 콘텐츠 스토리텔링 캡스톤"
+  venue: "서강대 자유전공학부 비교과"
+
+- date: "2025.06"
+  kind: "국내학술대회"
+  title: "조선 세조 대 보법의 성립과 군역 동원 단위의 표준화"
+  venue: "조선시대사학회 제205회 월례발표회"
+
+- date: "2025.03"
+  kind: "국제학술대회"
+  title: "Soldiers on Paper: The Long-term Transition From Military Service to Military Tax in Joseon Korea"
+  venue: "SMH Annual Meeting (Society of Military History)"
+  featured: true
+
+- date: "2025.01"
+  kind: "특강"
+  title: "연구자·대학원을 위한 DH 특강"
+  venue: "서강대 디지털역사연구소 특강"
+
+- date: "2025.01"
+  kind: "특강"
+  title: "세종실록지리지의 디지털 활용"
+  venue: "디지털인문학 겨울학교"
+
+- date: "2024.12~2025.01"
+  kind: "특강"
+  title: "서강대 국제지역문화원 인문고전 아카데미 강좌"
+  venue: "서강대 국제지역문화원 인문고전 아카데미 강좌"
+
+- date: "2024.10"
+  kind: "국내학술대회"
+  title: "조선 전기 인구·군사 분포 현황 - GIS를 활용한 세종실록지리지 데이터 분석"
+  venue: "한국역사연구회 중세2분과 월례발표회"
+
+- date: "2024.10"
+  kind: "국내학술대회"
+  title: "군사혁명론(Military Revolution)의 관점에서 본 조선 후기 군사사"
+  venue: "서강대학교 인문과학연구소 추계학술대회"
+
+- date: "2024.03"
+  kind: "국제학술대회 토론"
+  title: "일본에서 본 근세의 조중관계"
+  venue: "근세동아시아의 소통과 교류 (서강대 디지털역사연구소·나고야대)"
+
+- date: "2018.10"
+  kind: "국제학술대회"
+  title: "청 칙사의 한양 방문과 조선 후기 성지수축논의"
+  venue: "근세동아시아의 사절왕래와 의사소통 (서강대·나고야대 공동)"
+
+- date: "2016.05"
+  kind: "국내학술대회"
+  title: "丁丑約條를 통해 본 顯宗代 安秋元 事件"
+  venue: "조선시대사학회 제141회 월례발표회"
+
+- date: "2015.09"
+  kind: "국내학술대회"
+  title: "丁丑約條의 기능과 顯宗代 朝淸關係 - 顯宗代 安秋元 事件을 중심으로 -"
+  venue: "한국역사연구회 중세2분과 월례발표회"
+
+- date: "2015.08"
+  kind: "국제학술대회"
+  title: "정축약조를 통해 본 조청관계의 한 단면 - 현종대 안추원 사건을 중심으로 -"
+  venue: "KOREA학 국제학술토론회 (비엔나)"

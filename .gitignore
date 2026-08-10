@@ -1,0 +1,8 @@
+_site/
+__pycache__/
+*.pyc
+
+# 개인 문서는 공개 저장소에 올리지 않습니다
+*.hwp
+*.hwpx
+*.docx

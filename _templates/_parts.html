@@ -1,0 +1,65 @@
+{# ── 재사용 조각 ────────────────────────────────────────── #}
+
+{% macro rag_diagram(t) %}
+<svg viewBox="0 0 560 250" width="100%" height="100%" role="img" aria-label="{{ t.diagram_alt }}">
+  <defs>
+    <marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="#4F9A8E"/>
+    </marker>
+  </defs>
+  <g font-family="Inter, sans-serif" font-size="11.5" fill="#143963" text-anchor="middle">
+    <rect x="26" y="98" width="104" height="60" fill="#fff" stroke="#143963"/>
+    <text x="78" y="123">{{ t.d1 }}</text><text x="78" y="141" fill="#5c5c5c">Annals</text>
+    <rect x="172" y="98" width="104" height="60" fill="#fff" stroke="#143963"/>
+    <text x="224" y="123">{{ t.d2 }}</text><text x="224" y="141" fill="#5c5c5c">Index</text>
+    <rect x="318" y="98" width="104" height="60" fill="#f4f8f8" stroke="#4F9A8E"/>
+    <text x="370" y="123">{{ t.d3 }}</text><text x="370" y="141" fill="#5c5c5c">Retrieve</text>
+    <rect x="446" y="98" width="96" height="60" fill="#0C2542" stroke="#0C2542"/>
+    <text x="494" y="123" fill="#7FCBBE">{{ t.d4 }}</text><text x="494" y="141" fill="#9fb4c4">Generate</text>
+    <path d="M130 128 H166" stroke="#4F9A8E" stroke-width="1.4" marker-end="url(#ar)"/>
+    <path d="M276 128 H312" stroke="#4F9A8E" stroke-width="1.4" marker-end="url(#ar)"/>
+    <path d="M422 128 H440" stroke="#4F9A8E" stroke-width="1.4" marker-end="url(#ar)"/>
+    <path d="M494 92 V58 H370 V92" stroke="#c9d6dc" stroke-width="1.2" fill="none"
+          stroke-dasharray="3 3" marker-end="url(#ar)"/>
+    <text x="432" y="50" fill="#5c5c5c" font-size="11">{{ t.d_evidence }}</text>
+    <text x="284" y="200" fill="#5c5c5c" font-size="11">{{ t.d_caption }}</text>
+  </g>
+</svg>
+{% endmacro %}
+
+{% macro axis_card(a, t, root) %}
+<div class="axis">
+  <div class="fig">
+    {%- if a.figure == 'diagram-rag' -%}{{ rag_diagram(t) }}
+    {%- else -%}<img src="{{ root }}assets/img/{{ a.figure }}" alt="{{ a.figure_alt }}">{%- endif -%}
+  </div>
+  <div class="bd">
+    <div class="no">{{ a.no }}</div>
+    <h3>{{ a.title }}</h3>
+    <p>{{ a.body }}</p>
+    <div class="kw">{% for k in a.keywords %}<span>{{ k }}</span>{% endfor %}</div>
+    {% if a.link %}<a class="more go" href="{{ a.link }}">{{ a.link_label }} →</a>{% endif %}
+  </div>
+</div>
+{% endmacro %}
+
+{% macro career_row(c) %}
+<div class="crow">
+  <div class="p">{{ c.period }}</div>
+  <div>
+    <h4>{{ c.title }}{% if c.kind %}<span class="ckind">{{ c.kind }}</span>{% endif %}</h4>
+    <p>{{ c.org }}{% if c.detail %} · {{ c.detail }}{% endif %}</p>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro pub_row(x) %}
+<div class="pub" data-type="{{ x.type }}">
+  <div class="yr">{{ x.date }}</div>
+  <div class="ti">
+    {% if x.link %}<a href="{{ x.link }}">{{ x.title }}</a>{% else %}{{ x.title }}{% endif %}
+    <i>{{ x.venue }}{% if x.note %} · {{ x.note }}{% endif %}</i>
+  </div>
+  <div class="kd"><span>{{ x.type }}</span></div>
+</div>
+{% endmacro %}
