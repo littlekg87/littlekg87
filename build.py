@@ -17,7 +17,7 @@ TOP_N = 3  # 상단에 노출할 대표 항목 수
 LABELS = {
     "ko": dict(
         education="학위", career="경력", publications="연구성과", talks="학술대회 발표 및 특강",
-        projects="프로젝트 참여 이력", two_axes="연구의 두 축",
+        projects="프로젝트 참여 이력", two_axes="연구의 두 축", patents="특허", nav_patents="특허",
         students="학생 성과 소개", data="자료 공개",
         nav_education="학위", nav_career="경력", nav_publications="연구성과", nav_talks="발표 · 특강",
         nav_projects="프로젝트", nav_research="연구", nav_students="학생 성과",
@@ -31,7 +31,7 @@ LABELS = {
     ),
     "en": dict(
         education="Education", career="Career", publications="Publications", talks="Talks & Lectures",
-        projects="Research Projects", two_axes="Two Lines of Inquiry",
+        projects="Research Projects", two_axes="Two Lines of Inquiry", patents="Patents", nav_patents="Patents",
         students="Student Work", data="Data & Code",
         nav_education="Education", nav_career="Career", nav_publications="Publications", nav_talks="Talks",
         nav_projects="Projects", nav_research="Research", nav_students="Students",
@@ -46,7 +46,7 @@ LABELS = {
 }
 
 NAV = [("education", "nav_education"), ("career", "nav_career"), ("publications", "nav_publications"),
-       ("talks", "nav_talks"), ("projects", "nav_projects"),
+       ("patents", "nav_patents"), ("talks", "nav_talks"), ("projects", "nav_projects"),
        ("research", "nav_research"), ("students", "nav_students"),
        ("data", "nav_data")]
 
@@ -254,6 +254,7 @@ def main():
             sec_pubs=build_section(load(lang, "publications", []), mk_pub, summarize=True),
             sec_talks=build_section(load(lang, "talks", []), mk_talk, summarize=True),
             sec_projects=build_section(load(lang, "projects", []), mk_proj),
+            patents=load(lang, "patents", []),
             education=(p.get("education") or []),
             research=load(lang, "research", {}),
             teaching=load(lang, "teaching", {}),

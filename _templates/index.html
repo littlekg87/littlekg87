@@ -84,6 +84,25 @@
   {{ listing(sec_pubs, t) }}
 </section>
 
+<section class="wrap" id="patents">
+  <div class="shead"><h2>{% if lang == "ko" %}<small>Patents</small>{% endif %}{{ t.patents }}</h2></div>
+  {% if lang == 'en' %}<p class="translation-note">English invention titles follow the applications. <a href="{{ ko_href }}#patents">Full inventor and applicant names in Korean</a>.</p>{% endif %}
+  <div class="listing">
+    {% for x in patents %}
+    <div class="row">
+      <div class="rd">{{ x.date }}</div>
+      <div class="rt">
+        <span class="rtag k">{{ x.status }}</span>
+        <span class="entry-title">{{ x.title }}</span>
+        <span class="entry-meta">{{ x.country }} · {{ '출원번호' if lang == 'ko' else 'Application No.' }} {{ x.number }}</span>
+        <span class="entry-meta">{{ '발명자' if lang == 'ko' else 'Inventors' }}: {{ x.inventors }}</span>
+        <span class="entry-meta">{{ '출원인' if lang == 'ko' else 'Applicants' }}: {{ x.applicants }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="wrap" id="talks">
   <div class="shead"><h2>{% if lang == "ko" %}<small>Talks &amp; lectures</small>{% endif %}{{ t.talks }}</h2></div>
   {% if lang == 'en' %}<p class="translation-note">Translated talk titles are marked “Unofficial translation”; event and institution names may be descriptive translations. <a href="{{ ko_href }}#talks">Original Korean titles and venues</a>.</p>{% endif %}
