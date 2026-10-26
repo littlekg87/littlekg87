@@ -29,7 +29,7 @@ class BilingualSiteTests(unittest.TestCase):
             ko, en = self.data('ko', name), self.data('en', name)
             self.assertEqual(len(ko), len(en), name)
             for original, translated in zip(ko, en):
-                for key in ['date', 'doi', 'kci', 'featured']:
+                for key in ['date', 'doi', 'kci', 'featured', 'slides', 'github']:
                     self.assertEqual(original.get(key), translated.get(key), (name, key))
                 if 'period' in original:
                     self.assertEqual(original['period'].replace('현재', 'Present'), translated['period'])
@@ -43,6 +43,19 @@ class BilingualSiteTests(unittest.TestCase):
         self.assertIn('src="../assets/img/profile.jpg"', self.pages['en'])
         for lang, page in self.pages.items():
             self.assertIn('<html lang="' + lang + '">', page)
+
+    def test_talk_material_links(self):
+        for lang in ['ko', 'en']:
+            talks = self.data(lang, 'talks')
+            linked = [x for x in talks if x.get('slides')]
+            self.assertEqual(len(linked), 10)
+            section = self.pages[lang].split('id="talks">')[1].split('</section>')[0]
+            for talk in linked:
+                title = html.escape(talk['title'])
+                self.assertIn(f'<a class="tl" href="{talk["slides"]}">{title}</a>', section)
+                label = '발표자료' if lang == 'ko' else 'Slides'
+                self.assertIn(f'href="{talk["slides"]}">{label}</a>', section)
+                self.assertIn(f'href="{talk["github"]}">GitHub</a>', section)
 
     def test_english_labels_and_forthcoming_count(self):
         page = self.pages['en']

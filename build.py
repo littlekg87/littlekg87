@@ -166,6 +166,8 @@ def main():
                    "ciSereArtiView.kci?sereArticleSearchBean.artiId=")
 
         def link_of(x):
+            if x.get("slides"):
+                return str(escape(x["slides"])), "발표자료" if lang == "ko" else "Slides"
             if x.get("doi"):
                 return "https://doi.org/" + str(escape(x["doi"])), "DOI"
             if x.get("kci"):
@@ -194,6 +196,8 @@ def main():
             href, label = link_of(x)
             if href:
                 parts.append('<a class="doitag" href="%s">%s</a>' % (href, label))
+            if x.get("github"):
+                parts.append('<a class="doitag" href="%s">GitHub</a>' % escape(x["github"]))
             return Markup('<span class="entry-title">%s</span><span class="entry-meta">%s</span>'
                           % (title_html(x), " · ".join(parts)))
 

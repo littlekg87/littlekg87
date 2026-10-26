@@ -4,18 +4,27 @@
   venue: KOSSDA, 21st Data Fair
   original_title: '역사데이터와 AI의 융합은 가능한가? : 조선왕조실록 AI챗봇 설계 사례'
   translated_title: true
+  slides: "https://littlekg87.github.io/lecture/2026_KOSSDA/"
+  github: "https://github.com/littlekg87/lecture/tree/main/2026_KOSSDA"
+
 - date: 2026.10.22
   kind: 특강
   title: 'Humanities and Historical Data Analysis with GIS and AI: Building Digital Skills'
   venue: HUSS Inclusive Society Project, Pukyong National University
   original_title: GIS와 AI를 활용한 인문역사 데이터 분석 및 디지털 역량 강화 특강
   translated_title: true
+  slides: "https://littlekg87.github.io/lecture/2026_Student_Lecture/"
+  github: "https://github.com/littlekg87/lecture/tree/main/2026_Student_Lecture"
+
 - date: 2026.10.22
   kind: 워크숍
   title: Designing an HGIS for Relief Supplies Distributed through Busan Port during the Cold War
   venue: Maritime Humanities Research Institute, Pukyong National University
   original_title: 냉전기 부산항 구호물자 유통 H-GIS 설계방안
   translated_title: true
+  slides: "https://littlekg87.github.io/lecture/2026_Pukyong_GIS/"
+  github: "https://github.com/littlekg87/lecture/tree/main/2026_Pukyong_GIS"
+
 - date: 2026.10.21
   kind: 특강
   title: The Historian with a Magic Wand
@@ -28,12 +37,18 @@
   venue: Department of History, Ewha Womans University
   original_title: AI시대의 역사연구의 가능성
   translated_title: true
+  slides: "https://littlekg87.github.io/lecture/2026_AI_History/"
+  github: "https://github.com/littlekg87/lecture/tree/main/2026_AI_History"
+
 - date: 2026.10.02
   kind: 국내학술대회
   title: 'An Ontology of the Qing Empire: Modeling the Worldview of the Huang Qing Zhigong Tu'
   venue: Chinese History Society of Korea
   original_title: 청 제국의 온톨로지(Ontology)-황청직공도 세계 인식 구조의 디지털 온톨로지 구축 연구
   translated_title: true
+  slides: "https://littlekg87.github.io/huangqing-zhigongtu/presentations/2026-10-02/"
+  github: "https://github.com/littlekg87/huangqing-zhigongtu/tree/main/docs/presentations/2026-10-02"
+
 - date: 2026.09.28
   kind: 특강
   title: Historical Research in the Age of AI
@@ -47,6 +62,9 @@
   venue: Institute for Han-Character Education Research, Dankook University · 24th Hanyeon Forum
   original_title: '검색하는 사료에서 질문하는 사료로: 조선왕조실록 RAG 기반 연구 인터페이스 설계'
   translated_title: true
+  slides: "https://littlekg87.github.io/lecture/2026_HanyeonForum/"
+  github: "https://github.com/littlekg87/lecture/tree/main/2026_HanyeonForum"
+
 - date: 2026.09.14
   kind: 특강
   title: Yi Sun-sin’s Leadership and the Imjin War as an East Asian International Conflict
@@ -59,6 +77,9 @@
   venue: BK Education and Research Group, Department of Korean History, Seoul National University
   original_title: 'AI가 읽어낸 조선왕조실록의 패턴들: 세종실록지리지 연구 사례를 중심으로'
   translated_title: true
+  slides: "https://littlekg87.github.io/lecture/2026_SeoulUnivWorkshop/"
+  github: "https://github.com/littlekg87/lecture/tree/main/2026_SeoulUnivWorkshop"
+
 - date: 2026.10 — 2026.11
   kind: 비교과강좌
   title: Building Your Own AI Chatbot
@@ -88,17 +109,26 @@
   title: 'Build a Working RAG in Half a Day: UN Policy Reports with LangChain'
   venue: 'DH2026: Engagement (ADHO), Daejeon · Workshop'
   featured: true
+  slides: "https://littlekg87.github.io/DH2026/Workshop_RAG/"
+  github: "https://github.com/littlekg87/DH2026/tree/main/Workshop_RAG"
+
 - date: '2026.07'
   kind: 국제학술대회
   title: 'From Searchable Archives to Askable Archives: Designing a RAG-Based Research Interface for The Annals
     of the Joseon Dynasty'
   venue: 'DH2026: Engagement (ADHO), Daejeon · Short Paper'
   featured: true
+  slides: "https://littlekg87.github.io/DH2026/Sillok_RAG/"
+  github: "https://github.com/littlekg87/DH2026/tree/main/Sillok_RAG"
+
 - date: '2026.07'
   kind: 국제학술대회
   title: 'A Distant Reading of the Bulletin of Korean Historical Studies: Temporal Consciousness in Korean Historiographical
     Publications'
   venue: 'DH2026: Engagement (ADHO), Daejeon · Long Paper'
+  slides: "https://littlekg87.github.io/DH2026/Korean_Historiography/"
+  github: "https://github.com/littlekg87/DH2026/tree/main/Korean_Historiography"
+
 - date: '2026.03'
   kind: 국내학술대회
   title: How Does AI Read Classical Chinese Texts? An Experiment with Sejong Sillok Jiriji XML and a RAG System
