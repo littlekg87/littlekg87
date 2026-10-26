@@ -1,0 +1,48 @@
+intro: 'I bring together institutional history and methodological research: one asks how states mobilized people,
+  while the other develops tools for investigating that question.'
+axes:
+- false: '01'
+  title: Military Service in Joseon Korea
+  figure: ratiomap.png
+  figure_alt: Map of military registrant ratios in the Sejong Sillok Jiriji
+  body: On what grounds do states levy taxes and require military service? I trace three centuries of military obligations,
+    substitution (daerip), and the transition to military cloth taxes. GIS and inequality measures help assess the
+    equity of state mobilization.
+  keywords:
+  - Military service
+  - Daerip (substitution)
+  - HGIS
+  - Historical statistics
+- false: '02'
+  title: Ask Sillok — Askable Historical Sources
+  figure: diagram-rag
+  figure_alt: Ask Sillok architecture
+  body: Ask Sillok is a retrieval-augmented generation (RAG) system for asking historical questions about the Annals
+    of the Joseon Dynasty. It explores how historical records can become a reliable research environment that supports
+    questions as well as searches.
+  keywords:
+  - RAG
+  - Annals of the Joseon Dynasty
+  - Historical datasets
+  - AI and history
+  link: https://beta.asksillok.com/
+  link_label: Open Ask Sillok
+projects:
+- title: Joseon–Qing Relations in Late Joseon
+  question: How independent was Joseon in its relationship with Qing China?
+  body: Examining diplomatic events from Injo to Sukjong, this research explores a structure of diplomatic control
+    rather than direct political incorporation. Historical records and diplomatic documents reveal Joseon’s responses
+    and the tension between substantive subordination and formal autonomy.
+- title: Military Service Substitution in Early Joseon
+  question: Was military substitution necessarily a negative phenomenon?
+  body: Tracing changes from the fourteenth to the seventeenth century, this research examines substitution as part
+    of the transformation of military service into taxation and of state finance, combining socioeconomic history
+    with quantitative analysis.
+- title: Equity in Joseon Military Service
+  question: Was Joseon’s military service system equitable?
+  body: Statistical analysis of population and military data in the Sejong Sillok Jiriji assesses the distribution
+    of military obligations across demographic, geographic, and administrative units.
+- title: The Bulletin for Korean Historical Studies
+  question: What does Korean historical scholarship look like from a distance?
+  body: Combining text mining, GIS, and social network analysis of bibliographic records, this project examines
+    changing research topics and networks among scholars, journals, and institutions.

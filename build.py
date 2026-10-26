@@ -91,7 +91,8 @@ def build_section(items, make, summarize=False):
 
 
 def main():
-    site = yaml.safe_load(io.open(os.path.join(ROOT, "_data", "site.yml"), encoding="utf-8"))
+    with io.open(os.path.join(ROOT, "_data", "site.yml"), encoding="utf-8") as site_file:
+        site = yaml.safe_load(site_file)
     env = Environment(loader=FileSystemLoader(os.path.join(ROOT, "_templates")),
                       autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
 
@@ -119,7 +120,7 @@ def main():
             kind = c.get("kind")
             if c.get("detail"):
                 line += " · " + c["detail"]
-            if c.get("title") == "강사":
+            if c.get("title") in ("강사", "Lecturer"):
                 kind = "강사"
                 org, separator, courses = c.get("org", "").partition(" · ")
                 if separator and courses:
@@ -130,7 +131,7 @@ def main():
                                   '<span class="entry-meta">%s</span>'
                                   % (escape(courses), escape(meta)))
             return dict(date=c.get("period", ""), line=line,
-                        tags=([dict(text=kind, cls="k")] if kind else []),
+                        tags=([dict(text=short_kind(kind), cls="k")] if kind else []),
                         _sort=year_of(c.get("period")), _featured=c.get("featured"))
 
         def authors_html(x):
@@ -154,7 +155,7 @@ def main():
                 return escape(v)
             m = re.match(r"^(.*?)\s+([0-9][0-9()\-–~.\s]*)$", v)
             name, no = (m.group(1), m.group(2).strip()) if m else (v, "")
-            out = "『%s』" % escape(name)
+            out = (Markup("<i>%s</i>") if lang == "en" else "『%s』") % escape(name)
             if no:
                 out += " " + escape(no)
             if x.get("publisher"):
@@ -188,6 +189,8 @@ def main():
                 parts.append("<span class='au'>%s</span>" % au)
             if x.get("note"):
                 parts.append(str(escape(x["note"])))
+            if lang == "en" and x.get("translated_title"):
+                parts.append('<span class="translation-label">Unofficial translation</span>')
             href, label = link_of(x)
             if href:
                 parts.append('<a class="doitag" href="%s">%s</a>' % (href, label))
@@ -195,12 +198,20 @@ def main():
                           % (title_html(x), " · ".join(parts)))
 
         def short_kind(kind):
-            return {"KCI등재": "KCI", "기타논문": "기타"}.get(kind, kind)
+            labels = {"KCI등재": "KCI", "기타논문": "기타"}
+            if lang == "en":
+                labels.update({"기타논문": "Other", "기타": "Other", "교원": "Faculty",
+                               "강사": "Lecturer", "저서": "Book", "논문": "Article",
+                               "박사학위논문": "Ph.D. thesis", "석사학위논문": "Master's thesis",
+                               "KCI등재후보": "KCI candidate", "특강": "Lecture", "워크숍": "Workshop",
+                               "국내학술대회": "Domestic conference", "국제학술대회": "International conference",
+                               "비교과강좌": "Extracurricular course", "토론": "Discussion"})
+            return labels.get(kind, kind)
 
         def category_of(x):
             category = short_kind(x.get("kind") or "기타")
-            if "게재 예정" in (x.get("note") or ""):
-                category += " 게재 예정"
+            if x.get("forthcoming") or "게재 예정" in (x.get("note") or ""):
+                category += " forthcoming" if lang == "en" else " 게재 예정"
             return category
 
         TIERS = ("KCI등재", "KCI등재후보", "SCOPUS", "SSCI", "SCIE", "A&HCI", "ESCI")

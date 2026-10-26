@@ -1,0 +1,29 @@
+name: Kunha Kim
+name_latin: HISTORIAN · DIGITAL HISTORY
+eyebrow: Historian · Digital Humanities
+tagline: I study <b>military service in Joseon Korea</b> through digital history, exploring how states mobilized
+  people and how these practices changed over time.
+affiliations:
+- Full-time Researcher, Maritime Humanities Research Institute, Pukyong National University
+- Lecturer, Sogang University and Korea University
+about:
+- On what grounds do states levy taxes and require military service? I study the institutions of Joseon Korea to
+  understand long-term changes in state mobilization.
+- I combine historical GIS, statistics, text mining, and network analysis to visualize historical data and develop
+  new historical interpretations.
+- In my teaching, students formulate historical questions and use digital tools to investigate them. Their work
+  is shared with their consent.
+education:
+- date: '2023.08'
+  kind: Ph.D.
+  org: Sogang University, Korean History
+  thesis: The Development of Military Service Substitution (Daerip) and the Standardization of Military Service
+    Costs in Early Joseon
+- date: '2015.08'
+  kind: M.A.
+  org: Sogang University, Korean History
+  thesis: 'Joseon–Qing Relations from Hyeonjong to Sukjong through the Treaty of 1637: The An Chuwon Incident and
+    Debates over Rebuilding Bukhansanseong'
+- date: '2013.02'
+  kind: B.A.
+  org: Sogang University, History

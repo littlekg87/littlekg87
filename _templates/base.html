@@ -6,6 +6,10 @@
 <title>{{ page_title }} — {{ p.name }}</title>
 <meta name="description" content="{{ meta_desc }}">
 <link rel="canonical" href="{{ site.domain }}{{ canonical }}">
+{% if show_lang %}
+<link rel="alternate" hreflang="ko" href="{{ site.domain }}/">
+<link rel="alternate" hreflang="en" href="{{ site.domain }}/en/">
+{% endif %}
 <meta property="og:title" content="{{ page_title }} — {{ p.name }}">
 <meta property="og:description" content="{{ meta_desc }}">
 <meta property="og:type" content="website">
@@ -13,21 +17,21 @@
 <meta property="og:image" content="{{ site.domain }}/assets/img/profile.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ root }}assets/css/site.css">
 </head>
 <body>
 
 <div class="topbar{% if not is_home %} solid{% endif %}">
   <div class="wrap">
-    <a class="brand" href="{{ base }}">{{ p.name }} <span>{{ p.name_latin }}</span></a>
+    <a class="brand" href="{{ base }}">{{ p.name }}{% if lang == "ko" %} <span>{{ p.name_latin }}</span>{% endif %}</a>
     <nav class="menu" id="menu">
       {% for m in nav %}<a href="{{ m.href }}"{% if m.key == active %} class="on"{% endif %}>{{ m.label }}</a>{% endfor %}
     </nav>
     {% if show_lang %}
-    <div class="lang">
-      {% if lang == 'ko' %}<span class="cur">KO</span> / <a href="{{ en_href }}">EN</a>
-      {% else %}<a href="{{ ko_href }}">KO</a> / <span class="cur">EN</span>{% endif %}
+    <div class="lang" aria-label="Language">
+      {% if lang == 'ko' %}<span class="cur">KO</span> / <a href="{{ en_href }}" lang="en" hreflang="en" aria-label="English">EN</a>
+      {% else %}<a href="{{ ko_href }}" lang="ko" hreflang="ko" aria-label="한국어">KO</a> / <span class="cur">EN</span>{% endif %}
     </div>
     {% endif %}
     <button class="navtoggle" id="navtoggle" aria-label="menu">MENU</button>

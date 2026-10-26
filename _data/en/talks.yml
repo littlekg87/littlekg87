@@ -1,0 +1,212 @@
+- date: 2026.10.23
+  kind: 특강
+  title: Can Historical Data and AI Work Together? Designing an AI Chatbot for the Annals of the Joseon Dynasty
+  venue: KOSSDA, 21st Data Fair
+  original_title: '역사데이터와 AI의 융합은 가능한가? : 조선왕조실록 AI챗봇 설계 사례'
+  translated_title: true
+- date: 2026.10.22
+  kind: 특강
+  title: 'Humanities and Historical Data Analysis with GIS and AI: Building Digital Skills'
+  venue: HUSS Inclusive Society Project, Pukyong National University
+  original_title: GIS와 AI를 활용한 인문역사 데이터 분석 및 디지털 역량 강화 특강
+  translated_title: true
+- date: 2026.10.22
+  kind: 워크숍
+  title: Designing an HGIS for Relief Supplies Distributed through Busan Port during the Cold War
+  venue: Maritime Humanities Research Institute, Pukyong National University
+  original_title: 냉전기 부산항 구호물자 유통 H-GIS 설계방안
+  translated_title: true
+- date: 2026.10.21
+  kind: 특강
+  title: The Historian with a Magic Wand
+  venue: Seoul National University, New Interpretations of Korean History
+  original_title: 마법지팡이를 든 역사학자
+  translated_title: true
+- date: 2026.10.15
+  kind: 워크숍
+  title: Possibilities for Historical Research in the Age of AI
+  venue: Department of History, Ewha Womans University
+  original_title: AI시대의 역사연구의 가능성
+  translated_title: true
+- date: 2026.10.02
+  kind: 국내학술대회
+  title: 'An Ontology of the Qing Empire: Modeling the Worldview of the Huang Qing Zhigong Tu'
+  venue: Chinese History Society of Korea
+  original_title: 청 제국의 온톨로지(Ontology)-황청직공도 세계 인식 구조의 디지털 온톨로지 구축 연구
+  translated_title: true
+- date: 2026.09.28
+  kind: 특강
+  title: Historical Research in the Age of AI
+  venue: Department of History and Institute of Digital History, Sogang University · Colloquium
+  original_title: AI시대의 역사연구
+  translated_title: true
+- date: 2026.09.15
+  kind: 특강
+  title: 'From Searchable Sources to Askable Sources: Designing a RAG Research Interface for the Annals of the Joseon
+    Dynasty'
+  venue: Institute for Han-Character Education Research, Dankook University · 24th Hanyeon Forum
+  original_title: '검색하는 사료에서 질문하는 사료로: 조선왕조실록 RAG 기반 연구 인터페이스 설계'
+  translated_title: true
+- date: 2026.09.14
+  kind: 특강
+  title: Yi Sun-sin’s Leadership and the Imjin War as an East Asian International Conflict
+  venue: Yulgok Training Institute, Gyeonggi Provincial Office of Education
+  original_title: 이순신의 리더쉽과 동아시아 국제전쟁-임진왜란
+  translated_title: true
+- date: 2026.08.31
+  kind: 워크숍
+  title: 'Patterns in the Annals of the Joseon Dynasty Revealed by AI: A Case Study of the Sejong Sillok Jiriji'
+  venue: BK Education and Research Group, Department of Korean History, Seoul National University
+  original_title: 'AI가 읽어낸 조선왕조실록의 패턴들: 세종실록지리지 연구 사례를 중심으로'
+  translated_title: true
+- date: 2026.10 — 2026.11
+  kind: 비교과강좌
+  title: Building Your Own AI Chatbot
+  venue: Division of Interdisciplinary Studies in Humanities, Sogang University
+  original_title: 나만의 AI챗봇 만들기
+  translated_title: true
+- date: 2026.06 — 2026.08
+  kind: 비교과강좌
+  title: 'AIFA, Second Cohort: A Hands-on Workshop on RAG-based AI Chatbots'
+  venue: HUSS Inclusive Society Project, Sogang University
+  original_title: 'AIFA 2기: RAG 기반 AI챗봇 실습'
+  translated_title: true
+- date: '2026.04'
+  kind: 특강
+  title: 'The Past of the Future: A History of AI'
+  venue: Department of History and Institute of Digital History, Sogang University · Introduction to History lecture
+  original_title: '미래의 과거: AI의 역사'
+  translated_title: true
+- date: '2026.02'
+  kind: 특강
+  title: Text Analysis of the Nanjung Ilgi and Yi Sun-sin as a Person
+  venue: Professional Development Academy for Cultural Tourism Guides, Jung-gu, Seoul
+  original_title: 난중일기의 텍스트 분석과 인간 이순신
+  translated_title: true
+- date: '2026.07'
+  kind: 국제학술대회
+  title: 'Build a Working RAG in Half a Day: UN Policy Reports with LangChain'
+  venue: 'DH2026: Engagement (ADHO), Daejeon · Workshop'
+  featured: true
+- date: '2026.07'
+  kind: 국제학술대회
+  title: 'From Searchable Archives to Askable Archives: Designing a RAG-Based Research Interface for The Annals
+    of the Joseon Dynasty'
+  venue: 'DH2026: Engagement (ADHO), Daejeon · Short Paper'
+  featured: true
+- date: '2026.07'
+  kind: 국제학술대회
+  title: 'A Distant Reading of the Bulletin of Korean Historical Studies: Temporal Consciousness in Korean Historiographical
+    Publications'
+  venue: 'DH2026: Engagement (ADHO), Daejeon · Long Paper'
+- date: '2026.03'
+  kind: 국내학술대회
+  title: How Does AI Read Classical Chinese Texts? An Experiment with Sejong Sillok Jiriji XML and a RAG System
+  venue: Association of Korean Literature in Chinese · Spring Conference, Dankook University
+  original_title: '한문 텍스트는 어떻게 AI에게 ''읽히는가'' : 세종실록지리지 XML과 RAG시스템 구축 실험'
+  translated_title: true
+- date: '2026.01'
+  kind: 특강
+  title: What Are Digital Humanities?
+  venue: HUSS Project, Pusan National University
+  original_title: 디지털인문학, 그게 뭔데?
+  translated_title: true
+- date: '2026.01'
+  kind: 국제학술대회
+  title: 'Distant Viewing Inequality: A Digital Humanities Study of Joseon Conscription'
+  venue: HKADH 2026, The Chinese University of Hong Kong
+  featured: true
+- date: '2026.01'
+  kind: 특강
+  title: Yi Sun-sin on That Day
+  venue: National Museum of Korea · Special lecture accompanying the Our Yi Sun-sin exhibition
+  original_title: 그날의 이순신
+  translated_title: true
+- date: 2025.09~2025.11
+  kind: 비교과강좌
+  title: 'Beyond Words: A Text-mining Laboratory'
+  venue: Division of Interdisciplinary Studies in Humanities, Sogang University · Extracurricular course
+  original_title: 글자 너머의 세계–텍스트마이닝 실험실
+  translated_title: true
+- date: '2025.08'
+  kind: 특강
+  title: The Sejong Sillok Jiriji and Digital History
+  venue: Kyungpook National University · BK21 Summer Lecture
+  original_title: 세종실록지리지·디지털역사학
+  translated_title: true
+- date: '2025.10'
+  kind: 국제학술대회
+  title: Was the Military Service System in Joseon Fair? A Digital Historical Approach to the Military Institution
+    of the Joseon Dynasty
+  venue: CHS Monthly Meeting (Chosun History Society)
+- date: '2025.05'
+  kind: 비교과강좌
+  title: Digital Content Storytelling Capstone in the Humanities
+  venue: Division of Interdisciplinary Studies in Humanities, Sogang University · Extracurricular course
+  original_title: 인문학적 주제를 다룬 디지털 콘텐츠 스토리텔링 캡스톤
+  translated_title: true
+- date: '2025.06'
+  kind: 국내학술대회
+  title: The Establishment of the Po Law under King Sejo and the Standardization of Military Mobilization Units
+  venue: Joseon Dynasty History Association · 205th Monthly Meeting
+  original_title: 조선 세조 대 보법의 성립과 군역 동원 단위의 표준화
+  translated_title: true
+- date: '2025.03'
+  kind: 국제학술대회
+  title: 'Soldiers on Paper: The Long-term Transition From Military Service to Military Tax in Joseon Korea'
+  venue: SMH Annual Meeting (Society of Military History)
+  featured: true
+- date: '2025.01'
+  kind: 특강
+  title: Digital Humanities for Researchers and Graduate Students
+  venue: Institute of Digital History, Sogang University
+  original_title: 연구자·대학원을 위한 DH 특강
+  translated_title: true
+- date: '2025.01'
+  kind: 특강
+  title: Digital Approaches to the Sejong Sillok Jiriji
+  venue: Digital Humanities Winter School
+  original_title: 세종실록지리지의 디지털 활용
+  translated_title: true
+- date: 2024.12~2025.01
+  kind: 특강
+  title: Lectures in the Humanities Classics Academy
+  venue: Institute for International and Area Studies, Sogang University · Humanities Classics Academy
+  original_title: 서강대 국제지역문화원 인문고전 아카데미 강좌
+  translated_title: true
+- date: '2024.10'
+  kind: 국내학술대회
+  title: 'Population and Military Distribution in Early Joseon: A GIS Analysis of the Sejong Sillok Jiriji'
+  venue: Organization of Korean Historians · Medieval History II Division Monthly Meeting
+  original_title: 조선 전기 인구·군사 분포 현황 - GIS를 활용한 세종실록지리지 데이터 분석
+  translated_title: true
+- date: '2024.10'
+  kind: 국내학술대회
+  title: Late Joseon Military History through the Military Revolution Thesis
+  venue: Humanities Research Institute, Sogang University · Autumn Conference
+  original_title: 군사혁명론(Military Revolution)의 관점에서 본 조선 후기 군사사
+  translated_title: true
+- date: '2018.10'
+  kind: 국제학술대회
+  title: Qing Envoys in Hanyang and Debates over Fortification in Late Joseon
+  venue: Diplomatic Missions and Communication in Early Modern East Asia · Sogang University and Nagoya University
+  original_title: 청 칙사의 한양 방문과 조선 후기 성지수축논의
+  translated_title: true
+- date: '2016.05'
+  kind: 국내학술대회
+  title: The An Chuwon Incident under King Hyeonjong through the Treaty of 1637
+  venue: Joseon Dynasty History Association · 141st Monthly Meeting
+  original_title: 丁丑約條를 통해 본 顯宗代 安秋元 事件
+  translated_title: true
+- date: '2015.09'
+  kind: 국내학술대회
+  title: 'The Treaty of 1637 and Joseon–Qing Relations under King Hyeonjong: The An Chuwon Incident'
+  venue: Organization of Korean Historians · Medieval History II Division Monthly Meeting
+  original_title: 丁丑約條의 기능과 顯宗代 朝淸關係 - 顯宗代 安秋元 事件을 중심으로 -
+  translated_title: true
+- date: '2015.08'
+  kind: 국제학술대회
+  title: 'An Aspect of Joseon–Qing Relations through the Treaty of 1637: The An Chuwon Incident under King Hyeonjong'
+  venue: International Korean Studies Symposium, Vienna
+  original_title: 정축약조를 통해 본 조청관계의 한 단면 - 현종대 안추원 사건을 중심으로 -
+  translated_title: true

@@ -1,0 +1,15 @@
+intro: I share research data and code so that others can reproduce the results and build on them.
+items:
+- title: Ask Sillok
+  kind: Service
+  body: Ask Sillok is a retrieval-augmented generation (RAG) system for asking historical questions about the Annals
+    of the Joseon Dynasty. It explores how historical records can become a reliable research environment that supports
+    questions as well as searches.
+  link: https://beta.asksillok.com/
+  link_label: Open
+- title: Sejong Sillok Jiriji Database
+  kind: Dataset · Code
+  body: An integrated database of cleaned population and military records from the Sejong Sillok Jiriji, together
+    with text-mining code.
+  link: https://github.com/littlekg87/Sejong_Sillok_Jiriji
+  link_label: Repository

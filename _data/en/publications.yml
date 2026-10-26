@@ -1,0 +1,162 @@
+- date: '2026.12'
+  kind: KCI등재
+  title: 'The Dual Development of Mining in Late Qing Manchuria (1855–1911): An HGIS Analysis of the Spatial Differentiation
+    of State-operated and Private Mines'
+  venue: Dongbuga Yeoksa Nonchong 94
+  authors: Inju Song, Kunha Kim
+  note: Forthcoming
+  original_title: '청말 만주 지역 광산 개발의 이중적 전개(1855~1911): 역사지리정보시스템(HGIS)로 본 관영·민영 광산의 공간적 분화'
+  translated_title: true
+  forthcoming: true
+- date: '2026.09'
+  kind: KCI등재
+  title: 'Where the Troops Were Registered : The Spatial Composition of Military Service in Early Joseon, Based
+    on the Geographical Treatise of the Sejong sillok'
+  venue: Yeoksa Yeongu 57
+  original_title: 조선 초기 군정(軍丁)의 전국적 분포와 병종별 지역 편성- 세종실록지리지의 군현별 분석-
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003394577
+- date: '2026.09'
+  kind: KCI등재
+  title: Design Strategies and Learning Module Configuration for Digital History Courses -Case Studies from Undergraduate
+    Digital History Education-
+  venue: History Education 179
+  original_title: 디지털역사학 수업의 설계 전략과 학습 모듈 구성 -디지털역사학 학부 강의 사례 3건을 중심으로-
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003395470
+- date: '2026.08'
+  kind: KCI등재
+  title: Can RAG Work in Historical Research? — A Preliminary Study of RAG Design for the Transition from “Searchable
+    Sources” to “Askable Sources”—
+  venue: The Yeoksa and Silhak 90
+  original_title: 역사학에서 RAG는 가능한가? – ‘검색 가능한 사료’에서 ‘질문 가능한 사료’로의 전환을 위한 RAG 설계 시론-
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003379305
+- date: '2026.08'
+  kind: KCI등재
+  title: Reconsidering the Landscape of Digital History Research in Korea -Focusing on the Distinction between Building
+    Digital Research Environments and Investigating Historical Questions
+  venue: Historical Vistas 53
+  original_title: 한국 디지털역사학 연구 지형의 재검토-디지털 연구환경 구축형과 역사문제 탐구형의 구분을 중심으로-
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003382288
+- date: '2026.08'
+  kind: KCI등재
+  title: 'Distributional Characteristics of Households, Population, and Military Service Categories in Early Joseon
+    Gyeongsang Province: Focusing on the Records of the Sejong Sillok Jiriji'
+  doi: 10.15186/ikc.2026.8.31.04
+  venue: Minjok Munhwa Nonchong 93
+  original_title: 조선 초기 경상도 호구･병종의 분포 특징 －『세종실록지리지』의 기록을 중심으로－
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003378395
+- date: '2026.06'
+  kind: KCI등재
+  title: 'How Does Data Shape AI Responses?: A Comparative Experiment on RAG Responses Using the Sejong Sillok Jiriji'
+  venue: Journal of Korean Literature in Chinese 72
+  doi: 10.17260/jklc.2026.74..49
+  kci: ART003361051
+  featured: true
+  original_title: '데이터는 어떻게 AI의 답변을 바꾸는가 : RAG 세종실록지리지의 데이터 구조화 방식에 따른 응답 비교 실험'
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003361051
+- date: '2025.12'
+  kind: KCI등재
+  title: 'The Bulletin for Korean Historical Studies as a Dataset: Distant Reading and Knowledge Landscape Analysis of
+    Korean Historiography'
+  venue: The Korean Journal of History of Historiography 52
+  authors: Kunha Kim, Chiyoung Song (coauthors)
+  doi: 10.29186/kjhh.2025.52.83
+  kci: ART003296014
+  original_title: 데이터셋으로서 한국사연구휘보와 한국사 연구사 분석의 새로운 가능성
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003296014
+- date: '2025.11'
+  kind: 저서
+  title: Mangwon-dong
+  venue: 'History of Seoul Neighborhoods: Mapo-gu, Volume 4'
+  publisher: Seoul Historiography Institute
+  authors: Kunha Kim, Sungyu So, Bonggyu Lee, Huisik Kim (coauthors)
+  original_title: 망원동
+  translated_title: true
+- date: '2025.11'
+  kind: 저서
+  title: 'The Military Revolution in Late Chosun: Interpretations and Reflecions'
+  venue: Confucianism·Nation·Uniqueness
+  publisher: Sogang University Press
+  authors: Seung B. Kye and seven coauthors
+  original_title: 'The Military Revolution in Late Chosun: Interpretations and Reflecions'
+- date: '2025.09'
+  kind: KCI등재
+  title: 'Measuring Equity in Early Joseon Military Service : A Digital Humanities Analysis Using Geographic Information
+    Systems (GIS) and Inequality Indicators'
+  venue: Yŏksa wa Hyŏnsil 137
+  featured: true
+  authors: Kunha Kim (first author), Donghyun Woo (corresponding author)
+  doi: 10.35865/YWH.2025.06.136.247
+  kci: ART003255692
+  original_title: '조선 전기 군역의 형평성 측정 : GIS와 불평등 지표를 활용한 디지털 인문학적 분석'
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003255692
+- date: '2025.09'
+  kind: KCI등재
+  title: Reforming Conscription and The Po Law and Its Role in Unit Standardization in Early Chosŏn
+  venue: Journal of Joseon Dynasty History 114
+  kci: ART003254028
+  original_title: 조선 전기 保法의 성립과 군역 동원 표준 단위의 균질화
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003254028
+- date: '2025.02'
+  kind: 기타논문
+  title: Was There a Military Revolution in Late Joseon Korea?
+  doi: 10.23037/jnah.2025.21.2.006
+  venue: JNAH 21-2
+  authors: Kunha Kim, Dukhee Yun (coauthors)
+  original_title: Was There a Military Revolution in Late Joseon Korea?
+- date: '2023.12'
+  kind: KCI등재
+  title: Changing Perceptions of Military Service Substitution in Early Chosŏn Period
+  venue: Sogang Journal of Humanities 68
+  doi: 10.37981/hjhrisu.2023.12.68.173
+  kci: ART003035971
+  original_title: 조선 전기 軍役 代立의 인식 변화
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003035971
+- date: '2023.12'
+  kind: KCI등재
+  title: The Three Types of Military Substitution in Early Joseon Korea
+  doi: 10.52557/tpsh.2023.127.243
+  venue: The Paek-San Hakpo 127
+  original_title: 조선 전기 軍役 代立의 유형과 代立制 정비 - 代立價布 납부 방식을 중심으로 -
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003037376
+- date: '2023.11'
+  kind: KCI등재
+  title: The Military Labor Price Change in 15~16 Century Chosun
+  venue: Journal of Joseon Dynasty History 107
+  kci: ART003041434
+  original_title: 15~16세기 軍役의 代立價 변동 양상
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003041434
+- date: '2023.07'
+  kind: 박사학위논문
+  title: The Development of Military Service Substitution (Daerip) and the Standardization of Military Service Costs
+    in Early Joseon
+  venue: Department of History, Graduate School, Sogang University
+  featured: true
+  original_title: 조선 전기 대립(代立)의 전개와 군역 수행 비용의 표준화
+  translated_title: true
+- date: '2022.12'
+  kind: 기타논문
+  title: Profit-making Activities through the Military Service System in Sixteenth-century Korea
+  venue: Military History Research Series 10
+  original_title: 16세기 군역제도를 이용한 영리활동 사례
+  translated_title: true
+- date: '2017.08'
+  kind: KCI등재
+  title: Military Service Scandal in Early Chosun Period
+  doi: 10.37981/hjhrisu.2017.08.49.33
+  venue: Sogang Journal of Humanities 49
+  original_title: 朝鮮成宗代代立의 일면 - 鄭誠謹彈劾事件을 중심으로 -
+- date: '2016.09'
+  kind: KCI등재
+  title: The Peace Treaty of 1637 and the An Ch’uwon(安秋元) Case in 1666
+  venue: Journal of Joseon Dynasty History 78
+  featured: true
+  kci: ART002155361
+  original_title: 丁丑約條의 성격과 顯宗代 安秋元 사건
+  title_source: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002155361
+- date: '2015.08'
+  kind: 석사학위논문
+  title: 'Joseon–Qing Relations from Hyeonjong to Sukjong through the Treaty of 1637: The An Chuwon Incident and
+    Debates over Rebuilding Bukhansanseong'
+  venue: Department of History, Graduate School, Sogang University
+  original_title: '정축약조로 본 현종~숙종 대 조청관계 : 안추원 사건과 북한산성 수축 논의를 중심으로'
+  translated_title: true

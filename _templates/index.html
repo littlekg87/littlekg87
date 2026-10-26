@@ -46,7 +46,7 @@
   <div>
     <div class="rule"></div>
     <div class="eyebrow">{{ p.eyebrow }}</div>
-    <h1>{{ p.name }}<em>{{ p.name_latin }}</em></h1>
+    <h1>{{ p.name }}{% if lang == "ko" %}<em>{{ p.name_latin }}</em>{% endif %}</h1>
     <p class="tag">{{ p.tagline|safe }}</p>
     <div class="affil">{% for a in p.affiliations %}{{ a }}{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
     <div class="acts">
@@ -59,14 +59,14 @@
 </div></div>
 
 <section class="wrap" id="education">
-  <div class="shead"><h2><small>Education</small>{{ t.education }}</h2></div>
+  <div class="shead"><h2>{% if lang == "ko" %}<small>Education</small>{% endif %}{{ t.education }}</h2></div>
   <div class="listing">
     {% for e in education %}
     <div class="row">
       <div class="rd">{{ e.date }}</div>
       <div class="rt">
         <span class="rtag k">{{ e.kind }}</span>{{ e.org }}
-        {% if e.thesis %}<span class="thesis">「{{ e.thesis }}」</span>{% endif %}
+        {% if e.thesis %}<span class="thesis">{% if lang == "ko" %}「{{ e.thesis }}」{% else %}{{ e.thesis }}{% endif %}</span>{% endif %}
       </div>
     </div>
     {% endfor %}
@@ -74,22 +74,24 @@
 </section>
 
 <section class="wrap" id="career">
-  <div class="shead"><h2><small>Career</small>{{ t.career }}</h2></div>
+  <div class="shead"><h2>{% if lang == "ko" %}<small>Career</small>{% endif %}{{ t.career }}</h2></div>
   {{ listing(sec_career, t) }}
 </section>
 
 <section class="wrap" id="publications">
-  <div class="shead"><h2><small>Publications</small>{{ t.publications }}</h2></div>
+  <div class="shead"><h2>{% if lang == "ko" %}<small>Publications</small>{% endif %}{{ t.publications }}</h2></div>
+  {% if lang == 'en' %}<p class="translation-note">Published English titles are used where verified. Other translated titles are marked “Unofficial translation.” English renderings of institutions, events, and book titles are descriptive where an official name is unavailable. See the <a href="{{ ko_href }}#publications">Korean version</a> for original wording.</p>{% endif %}
   {{ listing(sec_pubs, t) }}
 </section>
 
 <section class="wrap" id="talks">
-  <div class="shead"><h2><small>Talks &amp; lectures</small>{{ t.talks }}</h2></div>
+  <div class="shead"><h2>{% if lang == "ko" %}<small>Talks &amp; lectures</small>{% endif %}{{ t.talks }}</h2></div>
+  {% if lang == 'en' %}<p class="translation-note">Translated talk titles are marked “Unofficial translation”; event and institution names may be descriptive translations. <a href="{{ ko_href }}#talks">Original Korean titles and venues</a>.</p>{% endif %}
   {{ listing(sec_talks, t) }}
 </section>
 
 <section class="wrap" id="projects">
-  <div class="shead"><h2><small>Projects</small>{{ t.projects }}</h2></div>
+  <div class="shead"><h2>{% if lang == "ko" %}<small>Projects</small>{% endif %}{{ t.projects }}</h2></div>
   {% if sec_projects.top or sec_projects.rest %}
     {{ listing(sec_projects, t) }}
   {% else %}
@@ -99,7 +101,7 @@
 
 <section class="wrap" id="research">
   <div class="shead">
-    <h2><small>Research</small>{{ t.two_axes }}</h2>
+    <h2>{% if lang == "ko" %}<small>Research</small>{% endif %}{{ t.two_axes }}</h2>
     <p class="lede">{{ research.intro }}</p>
   </div>
   <div class="axes">{% for a in research.axes %}{{ axis_card(a, t, root) }}{% endfor %}</div>
@@ -107,7 +109,7 @@
 
 <section class="wrap" id="students">
   <div class="shead">
-    <h2><small>Student work</small>{{ t.students }}</h2>
+    <h2>{% if lang == "ko" %}<small>Student work</small>{% endif %}{{ t.students }}</h2>
     <p class="lede">{{ teaching.intro }}</p>
   </div>
   <div class="cards one">
@@ -122,7 +124,7 @@
 
 <section class="wrap" id="data">
   <div class="shead">
-    <h2><small>Data &amp; code</small>{{ t.data }}</h2>
+    <h2>{% if lang == "ko" %}<small>Data &amp; code</small>{% endif %}{{ t.data }}</h2>
     <p class="lede">{{ datasets.intro }}</p>
   </div>
   <div class="cards">
