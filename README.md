@@ -5,11 +5,11 @@
 
 ## 🌐 [kunslab.com](https://kunslab.com/)
 
-**경력 · 연구성과 · 학술대회 발표 · 프로젝트 · 강의 자료를 한곳에서 보실 수 있습니다.**
+**경력 · 연구성과 · 특허 · 학술대회 발표 · 프로젝트 · 강의 자료를 한곳에서 보실 수 있습니다.**
 <br>
 **위의 url은 제 포트폴리오이고, 아래는 제 연구에 대한 소개입니다.**
 <br><br>
-*Career, publications, conference talks, projects, and teaching materials — all in one place.*
+*Career, publications, patents, conference talks, projects, and teaching materials — all in one place.*
 <br>
 *The link above is my portfolio; below is an introduction to my research.*
 
@@ -46,6 +46,17 @@ As of October 2026, recent additions to my publication list include **five publi
 - **Talks and workshops:** Recent activities include a Seoul National University workshop on AI analysis of the Annals of the Joseon Dynasty (August 31), a presentation at 중국사학회 on a digital ontology of the *Huang Qing Zhigong Tu* (October 2), and a talk on a historical AI chatbot at the KOSSDA 제21회 데이터페어 (October 23). My DH2026 contributions covered a hands-on RAG workshop, an Annals-based research interface, and distant reading of Korean historiography.
 
 See [Kunslab publications](https://kunslab.com/#publications) and [talks and lectures](https://kunslab.com/#talks) for the full lists and original titles.
+
+### Patent Applications (2026)
+
+Two patent applications were filed in the **Republic of Korea on August 26, 2026**. I am a co-inventor and co-applicant on both.
+
+- **System, Retrieval Method, and Index Construction Method for Cross-Lingual Retrieval of Chronicle-Style Historical Records**  
+  Application No. **10-2026-0160921** · Status: **Filed**
+- **Method and Apparatus for Training Cross-Lingual Encoder Based on Correspondence Between Title and Body of Chronological Historical Records**  
+  Application No. **10-2026-0160922** · Status: **Filed**
+
+The English titles follow the applications. See [patent details](https://kunslab.com/en/#patents) and [full inventor and applicant names in Korean](https://kunslab.com/#patents).
 
 ### 🔎 Research Areas and Current Projects
 
@@ -135,6 +146,17 @@ I also welcome scholarly exchange on Joseon military institutions, military serv
 - **학술발표·워크숍:** 서울대학교 국사학과 BK교육연구단 워크숍(8월 31일), 중국사학회의 『황청직공도』 디지털 온톨로지 연구 발표(10월 2일), KOSSDA 제21회 데이터페어의 조선왕조실록 AI챗봇 설계 사례 특강(10월 23일) 등을 진행했습니다. DH2026에서는 RAG 실습 워크숍, 조선왕조실록 연구 인터페이스, 한국사 연구사의 멀리서 읽기를 다뤘습니다.
 
 전체 서지정보와 활동 목록은 [Kunslab 연구성과](https://kunslab.com/#publications)와 [발표·특강](https://kunslab.com/#talks)에서 확인할 수 있습니다.
+
+### 특허 출원 (2026)
+
+**2026년 8월 26일 대한민국에 특허 2건을 공동출원**했습니다. 두 건의 발명자와 출원인은 **김근하, 김병준, 우동현, 박정희, 이시헌**입니다.
+
+- **편년체 사료의 교차언어 검색을 위한 시스템, 검색 방법 및 색인 구축 방법**  
+  출원번호 **10-2026-0160921** · 상태: **출원**
+- **편년체 사료의 제목과 본문의 대응관계에 기초한 교차언어 인코더 학습방법 및 그 장치**  
+  출원번호 **10-2026-0160922** · 상태: **출원**
+
+자세한 정보는 [Kunslab 특허](https://kunslab.com/#patents)에서 확인할 수 있습니다.
 
 ### 🔎 주요 연구 분야와 프로젝트
 
