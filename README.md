@@ -31,11 +31,21 @@
 
 > Making historical sources searchable, computable, and askable.
 
-I am a historian of Joseon Korea and a digital history researcher at Sogang University, South Korea. I received my Ph.D. in History from Sogang University, and my primary field is the military and socio-economic history of the Joseon dynasty.
+I am a historian of Joseon Korea and a digital history researcher, currently a full-time researcher at the Maritime Humanities Research Institute (해양인문학연구소), Pukyong National University, South Korea. I also teach at Sogang University and Korea University. I received my Ph.D. in History from Sogang University, and my primary field is the military and socio-economic history of the Joseon dynasty.
 
 My doctoral research examined how the military service system of early Joseon changed through *daerip* (代立), the practice of employing substitutes to perform military service. I trace how the spread of substitution and the standardization of military-service costs gradually transformed direct labor obligations into state-managed substitution and military taxation.
 
 Alongside this traditional historical research, I combine historical criticism with computational methods to analyze large-scale historical records and scholarly metadata. I am also interested in designing digital research environments in which historians can search, analyze, and ask questions of historical sources.
+
+### Recent Academic Activities (2026)
+
+As of October 2026, recent additions to my publication list include **five published articles in KCI-indexed journals and one coauthored article forthcoming in December 2026**.
+
+- **Historical RAG, methodology, and teaching:** Recent articles examine RAG design for historical sources, the research landscape of Korean digital history, and the design of undergraduate digital history courses.
+- **Quantitative and spatial history:** Two articles analyze the regional distribution of military personnel, households, and military service categories in early Joseon using the *Sejong Sillok Jiriji*. A study coauthored with 송인주 applies HGIS to state-operated and private mines in late Qing Manchuria (1855–1911); it is forthcoming in December 2026.
+- **Talks and workshops:** Recent activities include a Seoul National University workshop on AI analysis of the Annals of the Joseon Dynasty (August 31), a presentation at 중국사학회 on a digital ontology of the *Huang Qing Zhigong Tu* (October 2), and a talk on a historical AI chatbot at the KOSSDA 제21회 데이터페어 (October 23). My DH2026 contributions covered a hands-on RAG workshop, an Annals-based research interface, and distant reading of Korean historiography.
+
+See [Kunslab publications](https://kunslab.com/#publications) and [talks and lectures](https://kunslab.com/#talks) for the full lists and original titles.
 
 ### 🔎 Research Areas and Current Projects
 
@@ -110,11 +120,21 @@ I also welcome scholarly exchange on Joseon military institutions, military serv
 
 > 역사자료를 검색 가능하고, 계산 가능하며, 질문 가능한 형태로 만듭니다.
 
-저는 서강대학교에서 연구하고 있는 조선시대사 및 디지털역사학 연구자입니다. 서강대학교에서 역사학 박사학위를 받았으며, 주된 전공은 조선시대 군사사와 사회경제사입니다.
+저는 조선시대사 및 디지털역사학 연구자로, 현재 국립부경대학교 해양인문학연구소 전임연구원으로 재직하며 서강대학교와 고려대학교에서 강의하고 있습니다. 서강대학교에서 역사학 박사학위를 받았으며, 주된 전공은 조선시대 군사사와 사회경제사입니다.
 
 박사학위논문에서는 조선 전기의 군역제도가 대립(代立), 곧 다른 사람을 고용하여 군역을 대신 수행하게 하는 관행을 통해 어떻게 변화했는지를 연구했습니다. 대립의 확산과 군역 비용의 표준화가 인신에 대한 직접적인 노동 동원을 국가가 관리하는 대립과 군역의 조세화로 전환시키는 과정을 추적하고 있습니다.
 
 이러한 전통 역사학 연구와 함께 사료비판에 기초한 역사 연구와 디지털 분석 방법을 결합하여 대규모 역사자료와 학술 메타데이터를 분석합니다. 또한 역사학자가 사료를 검색하고 분석하며 질문할 수 있는 새로운 디지털 연구환경을 설계하는 데 관심을 두고 있습니다.
+
+### 2026년 주요 성과
+
+2026년 10월 기준, 최근 연구성과 목록에 **KCI 등재 학술지 게재 논문 5편과 2026년 12월 게재 예정 공동논문 1편**을 추가했습니다.
+
+- **역사 RAG·연구방법론·교육:** 「역사학에서 RAG는 가능한가?」를 비롯해 한국 디지털역사학의 연구 지형을 재검토하고, 학부 디지털역사학 수업의 설계 전략과 학습 모듈을 다룬 논문을 발표했습니다.
+- **계량사·공간사:** 『세종실록지리지』를 바탕으로 조선 초기 군정의 전국적 분포와 경상도 호구·병종의 분포를 분석한 논문 2편을 발표했습니다. 송인주·김근하 공동연구로 청말 만주 지역(1855~1911) 관영·민영 광산의 공간적 분화를 HGIS로 분석한 논문은 2026년 12월 게재 예정입니다.
+- **학술발표·워크숍:** 서울대학교 국사학과 BK교육연구단 워크숍(8월 31일), 중국사학회의 『황청직공도』 디지털 온톨로지 연구 발표(10월 2일), KOSSDA 제21회 데이터페어의 조선왕조실록 AI챗봇 설계 사례 특강(10월 23일) 등을 진행했습니다. DH2026에서는 RAG 실습 워크숍, 조선왕조실록 연구 인터페이스, 한국사 연구사의 멀리서 읽기를 다뤘습니다.
+
+전체 서지정보와 활동 목록은 [Kunslab 연구성과](https://kunslab.com/#publications)와 [발표·특강](https://kunslab.com/#talks)에서 확인할 수 있습니다.
 
 ### 🔎 주요 연구 분야와 프로젝트
 
