@@ -116,10 +116,21 @@ def main():
 
         def mk_career(c):
             line = "%s, %s" % (c.get("org", ""), c.get("title", ""))
+            kind = c.get("kind")
             if c.get("detail"):
                 line += " · " + c["detail"]
+            if c.get("title") == "강사":
+                kind = "강사"
+                org, separator, courses = c.get("org", "").partition(" · ")
+                if separator and courses:
+                    meta = org
+                    if c.get("detail"):
+                        meta += " · " + c["detail"]
+                    line = Markup('<span class="entry-title">%s</span>'
+                                  '<span class="entry-meta">%s</span>'
+                                  % (escape(courses), escape(meta)))
             return dict(date=c.get("period", ""), line=line,
-                        tags=([dict(text=c["kind"], cls="k")] if c.get("kind") else []),
+                        tags=([dict(text=kind, cls="k")] if kind else []),
                         _sort=year_of(c.get("period")), _featured=c.get("featured"))
 
         def authors_html(x):
@@ -215,7 +226,9 @@ def main():
                         _sort=str(x.get("date", "")), _featured=x.get("featured"))
 
         def mk_proj(x):
-            line = "%s, %s" % (x.get("title", ""), x.get("org", ""))
+            line = Markup('<span class="entry-title">%s</span>'
+                          '<span class="entry-meta">%s</span>'
+                          % (escape(x.get("title", "")), escape(x.get("org", ""))))
             tags = [dict(text=x["role"], cls="k")] if x.get("role") else []
             return dict(date=x.get("period", ""), line=line, tags=tags,
                         _sort=year_of(x.get("period")), _featured=x.get("featured"))
