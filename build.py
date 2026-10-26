@@ -64,7 +64,7 @@ def year_of(s):
     return m.group(1) if m else "—"
 
 
-def build_section(items, make):
+def build_section(items, make, summarize=False):
     """대표 항목(top)과 나머지(rest, 연도별 묶음)로 나눈다."""
     norm = [make(x) for x in (items or [])]
     norm.sort(key=lambda r: r["_sort"], reverse=True)
@@ -80,6 +80,13 @@ def build_section(items, make):
             cur = dict(year=y, rows=[])
             groups.append(cur)
         cur["rows"].append(r)
+    if summarize:
+        for group in groups:
+            counts = {}
+            for row in group["rows"]:
+                category = row.get("_category") or "기타"
+                counts[category] = counts.get(category, 0) + 1
+            group["counts"] = counts
     return dict(top=top, rest=rest, groups=groups)
 
 
@@ -108,7 +115,7 @@ def main():
         t = LABELS[lang]
 
         def mk_career(c):
-            line = "%s, %s" % (c.get("title", ""), c.get("org", ""))
+            line = "%s, %s" % (c.get("org", ""), c.get("title", ""))
             if c.get("detail"):
                 line += " · " + c["detail"]
             return dict(date=c.get("period", ""), line=line,
@@ -161,53 +168,63 @@ def main():
             return t
 
         def compose(x):
-            parts = [title_html(x)]
+            parts = []
             v = venue_html(x)
             if v:
-                parts.append(v)
-            if x.get("note"):
-                parts.append(escape(x["note"]))
-            line = ", ".join(str(s) for s in parts)
+                parts.append(str(v))
             au = authors_html(x)
             if au:
-                line += " <span class='au'>(%s)</span>" % au
+                parts.append("<span class='au'>%s</span>" % au)
+            if x.get("note"):
+                parts.append(str(escape(x["note"])))
             href, label = link_of(x)
             if href:
-                line += ' <a class="doitag" href="%s">%s</a>' % (href, label)
-            return Markup(line)
+                parts.append('<a class="doitag" href="%s">%s</a>' % (href, label))
+            return Markup('<span class="entry-title">%s</span><span class="entry-meta">%s</span>'
+                          % (title_html(x), " · ".join(parts)))
+
+        def short_kind(kind):
+            return {"KCI등재": "KCI", "기타논문": "기타"}.get(kind, kind)
+
+        def category_of(x):
+            category = short_kind(x.get("kind") or "기타")
+            if "게재 예정" in (x.get("note") or ""):
+                category += " 게재 예정"
+            return category
 
         TIERS = ("KCI등재", "KCI등재후보", "SCOPUS", "SSCI", "SCIE", "A&HCI", "ESCI")
 
         def tags_of(x):
             out = []
             if x.get("kind"):
-                out.append(dict(text=x["kind"], cls="k"))
+                out.append(dict(text=short_kind(x["kind"]), cls="k"))
             idx = x.get("index")
             for i in ([idx] if isinstance(idx, str) else (idx or [])):
-                out.append(dict(text=i, cls="k"))
+                out.append(dict(text=short_kind(i), cls="k"))
             return out
 
         def mk_pub(x):
             return dict(date=x.get("date", ""), line=compose(x), tags=tags_of(x),
+                        _category=category_of(x),
                         _sort=str(x.get("date", "")),
                         _featured=x.get("featured"))
 
         def mk_talk(x):
             return dict(date=x.get("date", ""), line=compose(x), tags=tags_of(x),
+                        _category=category_of(x),
                         _sort=str(x.get("date", "")), _featured=x.get("featured"))
 
         def mk_proj(x):
             line = "%s, %s" % (x.get("title", ""), x.get("org", ""))
-            if x.get("role"):
-                line += " · " + x["role"]
-            return dict(date=x.get("period", ""), line=line, tags=[],
+            tags = [dict(text=x["role"], cls="k")] if x.get("role") else []
+            return dict(date=x.get("period", ""), line=line, tags=tags,
                         _sort=year_of(x.get("period")), _featured=x.get("featured"))
 
         ctx = dict(
             lang=lang, t=t, site=site, p=p,
             sec_career=build_section(load(lang, "career", []), mk_career),
-            sec_pubs=build_section(load(lang, "publications", []), mk_pub),
-            sec_talks=build_section(load(lang, "talks", []), mk_talk),
+            sec_pubs=build_section(load(lang, "publications", []), mk_pub, summarize=True),
+            sec_talks=build_section(load(lang, "talks", []), mk_talk, summarize=True),
             sec_projects=build_section(load(lang, "projects", []), mk_proj),
             education=(p.get("education") or []),
             research=load(lang, "research", {}),

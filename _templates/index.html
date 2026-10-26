@@ -23,7 +23,16 @@
   </button>
   <div class="rest" hidden>
     {% for grp in sec.groups %}
-      <div class="yr">{{ grp.year }}</div>
+      <div class="year-heading">
+        <h3 class="yr">{{ grp.year }}</h3>
+        {% if grp.counts %}
+        <ul class="year-counts" aria-label="{{ grp.year }} {{ '유형별 건수' if lang == 'ko' else 'counts by type' }}">
+          {% for label, count in grp.counts.items() %}
+          <li>{{ label }} <span>{{ count }}{{ '건' if lang == 'ko' else '' }}</span></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
       {{ rows(grp.rows) }}
     {% endfor %}
   </div>

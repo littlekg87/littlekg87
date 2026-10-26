@@ -204,7 +204,7 @@ footer .fgrid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap
 .topbar{position:sticky;top:0;z-index:30}
 section{scroll-margin-top:82px}
 .listing{border-top:1px solid var(--line)}
-.row{display:grid;grid-template-columns:132px 1fr;gap:28px;padding:20px 0;
+.row{display:grid;grid-template-columns:190px minmax(0,1fr);gap:28px;padding:20px 0;
   border-bottom:1px solid var(--line);align-items:baseline}
 .row .rd{font-family:'Inter',sans-serif;font-size:14.5px;color:var(--mint-dim);
   letter-spacing:.02em;white-space:nowrap}
@@ -222,8 +222,26 @@ section{scroll-margin-top:82px}
 .toggle .lb-close{display:none}
 .toggle[aria-expanded="true"] .lb-open{display:none}
 .toggle[aria-expanded="true"] .lb-close{display:inline}
-.rest .yr{font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.2em;color:var(--mint-dim);
-  padding:30px 0 8px}
+.year-heading{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;
+  padding:36px 0 14px;border-bottom:2px solid #d5e5e1}
+.rest .yr{font-family:'Inter',sans-serif;font-size:30px;font-weight:500;line-height:1.25;
+  letter-spacing:-.03em;color:var(--navy)}
+.year-counts{display:flex;gap:8px 18px;flex-wrap:wrap;list-style:none;color:var(--mid);
+  font-size:13px;font-weight:400;line-height:1.7}
+.year-counts li{white-space:nowrap}
+.year-counts span{color:var(--navy);font-weight:500;margin-left:3px}
+.entry-title{font-size:20px;font-weight:700;line-height:1.65;overflow-wrap:anywhere}
+.entry-meta{display:block;margin-top:7px;color:var(--mid);font-size:15px;font-weight:400;
+  line-height:1.8;overflow-wrap:anywhere}
+.entry-meta .au b{font-weight:400}
+.entry-meta .doitag{margin-left:0}
+@media (max-width:820px){
+  .entry-title{font-size:18px}
+  .entry-meta{font-size:14px}
+  .year-heading{gap:10px 16px;padding-top:28px}
+  .rest .yr{font-size:27px}
+  .year-counts{gap:6px 12px}
+}
 ul.plain{list-style:none;margin-top:4px}
 ul.plain li{font-size:15.5px;line-height:2.1;color:#3a3a3a;padding-left:14px;position:relative}
 ul.plain li::before{content:'';position:absolute;left:0;top:15px;width:5px;height:1px;
