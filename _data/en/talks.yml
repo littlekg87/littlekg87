@@ -111,6 +111,8 @@
   featured: true
   slides: "https://littlekg87.github.io/DH2026/Workshop_RAG/"
   github: "https://github.com/littlekg87/DH2026/tree/main/Workshop_RAG"
+  zenodo: "https://zenodo.org/records/22073445"
+  abstract_doi: "10.5281/zenodo.22073445"
 
 - date: '2026.07'
   kind: 국제학술대회
@@ -120,6 +122,8 @@
   featured: true
   slides: "https://littlekg87.github.io/DH2026/Sillok_RAG/"
   github: "https://github.com/littlekg87/DH2026/tree/main/Sillok_RAG"
+  zenodo: "https://zenodo.org/records/22073561"
+  abstract_doi: "10.5281/zenodo.22073561"
 
 - date: '2026.07'
   kind: 국제학술대회
@@ -128,6 +132,8 @@
   venue: 'DH2026: Engagement (ADHO), Daejeon · Long Paper'
   slides: "https://littlekg87.github.io/DH2026/Korean_Historiography/"
   github: "https://github.com/littlekg87/DH2026/tree/main/Korean_Historiography"
+  zenodo: "https://zenodo.org/records/22073597"
+  abstract_doi: "10.5281/zenodo.22073597"
 
 - date: '2026.03'
   kind: 국내학술대회
@@ -240,3 +246,12 @@
   venue: International Korean Studies Symposium, Vienna
   original_title: 정축약조를 통해 본 조청관계의 한 단면 - 현종대 안추원 사건을 중심으로 -
   translated_title: true
+
+- date: 2026.07.31
+  kind: 국제학술대회
+  title: Bibliographic Data as a Primary Source—A Case Study of Scholarly Communication in Modern Korean Historiography (1930s–Present) from the Bulletin for Korean Historical Studies
+  venue: 'DH2026: Engagement (ADHO), Daejeon · Co-authored presentation'
+  authors: Song, Chiyoung; Kim, Kunha
+  note: Co-author contribution · Presented by Song, Chiyoung
+  zenodo: https://zenodo.org/records/22135773
+  abstract_doi: 10.5281/zenodo.22135773

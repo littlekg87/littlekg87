@@ -198,6 +198,11 @@ def main():
                 parts.append('<a class="doitag" href="%s">%s</a>' % (href, label))
             if x.get("github"):
                 parts.append('<a class="doitag" href="%s">GitHub</a>' % escape(x["github"]))
+            if x.get("zenodo"):
+                label = "초록 · Zenodo" if lang == "ko" else "Abstract · Zenodo"
+                parts.append('<a class="doitag" href="%s">%s</a>' % (escape(x["zenodo"]), label))
+            if x.get("abstract_doi"):
+                parts.append('<a class="doitag" href="https://doi.org/%s">DOI</a>' % escape(x["abstract_doi"]))
             return Markup('<span class="entry-title">%s</span><span class="entry-meta">%s</span>'
                           % (title_html(x), " · ".join(parts)))
 

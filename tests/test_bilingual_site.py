@@ -29,7 +29,7 @@ class BilingualSiteTests(unittest.TestCase):
             ko, en = self.data('ko', name), self.data('en', name)
             self.assertEqual(len(ko), len(en), name)
             for original, translated in zip(ko, en):
-                for key in ['date', 'doi', 'kci', 'featured', 'slides', 'github']:
+                for key in ['date', 'doi', 'kci', 'featured', 'slides', 'github', 'zenodo', 'abstract_doi']:
                     self.assertEqual(original.get(key), translated.get(key), (name, key))
                 if 'period' in original:
                     self.assertEqual(original['period'].replace('현재', 'Present'), translated['period'])
@@ -69,6 +69,16 @@ class BilingualSiteTests(unittest.TestCase):
         self.assertIn('>Lecturer</span><span class="entry-title">', page)
         self.assertIn('>Principal Investigator</span>', page)
         self.assertIn('>교원</span>', self.pages['ko'])
+
+    def test_zenodo_abstracts(self):
+        for lang in ['ko', 'en']:
+            linked = [x for x in self.data(lang, 'talks') if x.get('zenodo')]
+            self.assertEqual(len(linked), 4)
+            for talk in linked:
+                self.assertIn('href="' + talk['zenodo'] + '"', self.pages[lang])
+                self.assertIn('href="https://doi.org/' + talk['abstract_doi'] + '"', self.pages[lang])
+            coauthor = next(x for x in linked if x['zenodo'].endswith('22135773'))
+            self.assertIn('Song, Chiyoung', coauthor['note'])
 
 
 if __name__ == '__main__':
