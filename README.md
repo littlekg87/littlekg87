@@ -47,6 +47,13 @@ As of October 2026, recent additions to my publication list include **five publi
 
 See [Kunslab publications](https://kunslab.com/#publications) and [talks and lectures](https://kunslab.com/#talks) for the full lists and original titles.
 
+### DH2026 Abstracts
+
+- **Workshop:** [Build a Working RAG in Half a Day: UN Policy Reports with LangChain](https://zenodo.org/records/22073445)
+- **Short Paper:** [From Searchable Archives to Askable Archives: Designing a RAG-Based Research Interface for The Annals of the Joseon Dynasty](https://zenodo.org/records/22073561)
+- **Long Paper:** [A Distant Reading of the Bulletin of Korean Historical Studies: Temporal Consciousness in Korean Historiographical Publications](https://zenodo.org/records/22073597)
+- **Co-author contribution · Presented by Song, Chiyoung:** [Bibliographic Data as a Primary Source—A Case Study of Scholarly Communication in Modern Korean Historiography (1930s–Present) from the Bulletin for Korean Historical Studies](https://zenodo.org/records/22135773)
+
 ### Patent Applications (2026)
 
 Two patent applications were filed in the **Republic of Korea on August 26, 2026**. I am a co-inventor and co-applicant on both.
@@ -146,6 +153,13 @@ I also welcome scholarly exchange on Joseon military institutions, military serv
 - **학술발표·워크숍:** 서울대학교 국사학과 BK교육연구단 워크숍(8월 31일), 중국사학회의 『황청직공도』 디지털 온톨로지 연구 발표(10월 2일), KOSSDA 제21회 데이터페어의 조선왕조실록 AI챗봇 설계 사례 특강(10월 23일) 등을 진행했습니다. DH2026에서는 RAG 실습 워크숍, 조선왕조실록 연구 인터페이스, 한국사 연구사의 멀리서 읽기를 다뤘습니다.
 
 전체 서지정보와 활동 목록은 [Kunslab 연구성과](https://kunslab.com/#publications)와 [발표·특강](https://kunslab.com/#talks)에서 확인할 수 있습니다.
+
+### DH2026 발표 초록
+
+- **워크숍:** [Build a Working RAG in Half a Day: UN Policy Reports with LangChain](https://zenodo.org/records/22073445)
+- **Short Paper:** [From Searchable Archives to Askable Archives: Designing a RAG-Based Research Interface for The Annals of the Joseon Dynasty](https://zenodo.org/records/22073561)
+- **Long Paper:** [A Distant Reading of the Bulletin of Korean Historical Studies: Temporal Consciousness in Korean Historiographical Publications](https://zenodo.org/records/22073597)
+- **공동저자 참여 · 발표: Song, Chiyoung:** [Bibliographic Data as a Primary Source—A Case Study of Scholarly Communication in Modern Korean Historiography (1930s–Present) from the Bulletin for Korean Historical Studies](https://zenodo.org/records/22135773)
 
 ### 특허 출원 (2026)
 
